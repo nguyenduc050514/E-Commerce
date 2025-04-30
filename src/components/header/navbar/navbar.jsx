@@ -1,6 +1,7 @@
 import styles from "@components/header/navbar/navbar.module.scss";
 import menu from "@assets/icons/menu.svg";
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 const Navbar = () => {
    const [isMobile, setIsMobile] = useState(false);
    const [isToggleMenu, setIsToggleMenu] = useState(false);
@@ -16,31 +17,31 @@ const Navbar = () => {
    const navbarListItems = [
       {
          title: "Home",
-         href: "#!",
+         href: "/",
       },
       {
          title: "Category",
-         href: "#!",
+         href: "/category",
       },
       {
          title: "Brand",
-         href: "#!",
+         href: "/brand",
       },
       {
          title: "Products",
-         href: "#!",
+         href: "/products",
       },
       {
          title: "About",
-         href: "#!",
+         href: "/about",
       },
       {
          title: "Shop",
-         href: "#!",
+         href: "/shop",
       },
       {
          title: "Pages",
-         href: "#!",
+         href: "pages",
       },
    ];
    return (
@@ -64,9 +65,9 @@ const Navbar = () => {
          >
             {navbarListItems.map(({ title, href }) => (
                <li key={title} className={styles["navig-navbar__items"]}>
-                  <a href={href} className={styles["navig-navbar__link"]}>
+                  <Link to={href} className={styles["navig-navbar__link"]}>
                      {title}
-                  </a>
+                  </Link>
                </li>
             ))}
          </ul>

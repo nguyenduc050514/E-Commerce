@@ -44,3 +44,16 @@ input,
 textarea {
    background: transparent;
 }
+
+%containerMaxWidth {
+   width: 100%;
+   max-width: 1170px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@mixin flexItemCenter($direction: row, $items: center) {
+   display: flex;
+   align-items: $items;
+   flex-direction: $direction;
+}

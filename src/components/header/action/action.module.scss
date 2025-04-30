@@ -1,9 +1,4 @@
 @import "@assets/scss/main.scss";
-@mixin flexItemCenter($direction: row, $items: center) {
-   display: flex;
-   align-items: $items;
-   flex-direction: $direction;
-}
 
 .action {
    @include flexItemCenter($items: flex-start);

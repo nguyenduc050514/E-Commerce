@@ -1,21 +1,9 @@
 @import "@assets/scss/main.scss";
-@mixin flexItemCenter($direction: row, $items: center) {
-   display: flex;
-   align-items: $items;
-   flex-direction: $direction;
-}
-
-%containerMaxWidth {
-   width: 100%;
-   max-width: 1170px;
-   margin-left: auto;
-   margin-right: auto;
-}
 
 .header {
    background: $primary-bg-color;
    color: #fff;
-   padding: 28px 0 10px 0;
+   padding-top: 17px;
    &__container {
       @include flexItemCenter();
       @extend %containerMaxWidth;
