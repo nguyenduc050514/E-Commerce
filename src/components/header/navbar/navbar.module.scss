@@ -1,3 +1,4 @@
+@import "@assets/scss/main.scss";
 @mixin flexItemCenter($direction: row, $items: center) {
    display: flex;
    align-items: $items;
@@ -12,11 +13,35 @@
 }
 
 .navig {
+   position: relative;
+   padding: 0;
+   margin: 0;
    &-navbar__list {
       @include flexItemCenter();
       @extend %containerMaxWidth;
       width: fit-content;
       margin-top: 25px;
+      padding-bottom: 15px;
+      @include breakpoint(large) {
+         margin-top: 15px;
+      }
+      @include breakpoint(medium) {
+         display: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         background: $primary-bg-color;
+         flex-direction: column;
+         z-index: 1000;
+         padding: 0;
+         margin-top: 0;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+         &.active {
+            display: flex;
+         }
+      }
    }
 
    &-navbar__link {
@@ -24,9 +49,29 @@
       padding: 20px;
       font-size: 1.6rem;
       line-height: 2.8;
+
+      @include breakpoint(large) {
+         padding: 17px;
+         font-size: 1.4rem;
+         line-height: 2.5;
+      }
+
+      @include breakpoint(medium) {
+         display: block;
+         padding: 10px 0;
+      }
    }
 
-   &-navbar__items:first-child &-navbar__link {
-      padding: 20px 20px 20px 0;
+   &-navbar__items {
+      @include breakpoint(medium) {
+         width: 100%;
+         text-align: center;
+      }
+   }
+
+   &-navbar__menu-btn {
+      @include flexItemCenter();
+      gap: 10px;
+      padding: 15px 15px 15px 0;
    }
 }

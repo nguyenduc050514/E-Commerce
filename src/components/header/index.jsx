@@ -1,9 +1,7 @@
 import styles from "@components/header/header.module.scss";
 import search from "@assets/icons/search.svg";
-import user from "@assets/icons/user.svg";
-import heart from "@assets/icons/heart.svg";
-import shop from "@assets/icons/Shop.svg";
 import Navbar from "./navbar/navbar";
+import Action from "./action/action";
 const Header = () => {
    return (
       <header className={styles["header"]}>
@@ -30,20 +28,7 @@ const Header = () => {
                </div>
                {/* navbar */}
             </div>
-            {/* action */}
-            <div className={styles["action"]}>
-               <button>
-                  <img src={user} alt="user" />
-               </button>
-               <button>
-                  <img src={heart} alt="user" />
-                  <span>(0)</span>
-               </button>
-               <button>
-                  <img src={shop} alt="user" />
-                  <span>(0)</span>
-               </button>
-            </div>
+            <Action />
          </div>
          <Navbar />
       </header>

@@ -1,0 +1,20 @@
+@import "@assets/scss/main.scss";
+@mixin flexItemCenter($direction: row, $items: center) {
+   display: flex;
+   align-items: $items;
+   flex-direction: $direction;
+}
+
+.action {
+   @include flexItemCenter($items: flex-start);
+   gap: 18px;
+
+   @include breakpoint(large) {
+      gap: 10px;
+   }
+
+   &-icon {
+      width: 20px;
+      height: 20px;
+   }
+}
