@@ -3,13 +3,19 @@
 .section {
    background: $primary-card-ng-color;
    padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.slider-container {
+   position: relative;
+   overflow: hidden;
 }
 
 .section-banner {
    @extend %containerMaxWidth;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   
+   transition: transform 0.5s ease;
 }
 
 .section-ct {
@@ -43,6 +49,11 @@
    }
 }
 
+.section-media {
+   display: flex;
+   justify-content: center;
+}
+
 .media {
    &__wrapper {
       position: relative;
@@ -50,9 +61,10 @@
       display: inline-block;
    }
 
-   &__media {
+   &__image {
       width: 470px;
       height: 550px;
+      margin: 0;
    }
 
    &__img {
@@ -69,7 +81,58 @@
    left: 10px;
    width: 100%;
    height: 100%;
-   background-color: #111; // hoặc #000
+   background-color: #111;
    transform: rotate(20deg);
    z-index: 0;
+}
+
+.slider-controls {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+
+.slider-arrow {
+   background: $primary-bg-color;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   font-size: 1.8rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+
+   &:hover {
+      background-color: darken($primary-bg-color, 10%);
+   }
+}
+
+.slider-dots {
+   display: flex;
+   justify-content: center;
+   margin: 0 20px;
+}
+
+.slider-dot {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: #ccc;
+   margin: 0 5px;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+
+   &.active {
+      background-color: $primary-bg-color;
+   }
+
+   &:hover {
+      background-color: darken(#ccc, 10%);
+   }
 }
