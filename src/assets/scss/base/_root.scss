@@ -1,5 +1,5 @@
 /* Google Font - dùng cú pháp CSS, vẫn hợp lệ trong SCSS */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap");
 @import "variable.scss";
 *,
 *::before,
@@ -37,6 +37,7 @@ select {
    color: inherit;
    outline: none;
    border: none;
+   text-decoration: none;
 }
 
 input,

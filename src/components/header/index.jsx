@@ -1,53 +1,51 @@
 import styles from "@components/header/header.module.scss";
+import search from "@assets/icons/search.svg";
+import user from "@assets/icons/user.svg";
+import heart from "@assets/icons/heart.svg";
+import shop from "@assets/icons/Shop.svg";
+import Navbar from "./navbar/navbar";
 const Header = () => {
    return (
       <header className={styles["header"]}>
-         <div className="header__container">
+         <div className={styles["header__container"]}>
             {/* logo */}
-            <div>
-               <p>Pursuit</p>
+            <div className={styles["logo"]}>
+               <a href="/" className={styles["logo__title"]}>
+                  Pursuit
+               </a>
             </div>
-            <div>
-               {/* search */}
-               <div>
-                  <input type="text" name="" id="" />
-                  <button>Search</button>
+            {/* search */}
+            <div className={styles["navig"]}>
+               <div className={styles["navig-search__wrapper"]}>
+                  <input
+                     type="text"
+                     name=""
+                     id=""
+                     className={styles["navig-search__input"]}
+                     placeholder="Search for anything"
+                  />
+                  <button className={styles["navig-search__button"]}>
+                     <img src={search} alt="logo" />
+                  </button>
                </div>
                {/* navbar */}
-               <div>
-                  <ul>
-                     <li>
-                        <a href="#!">Home</a>
-                     </li>
-                     <li>
-                        <a href="#!">Category</a>
-                     </li>
-                     <li>
-                        <a href="#!">Brand</a>
-                     </li>
-                     <li>
-                        <a href="#!">Products</a>
-                     </li>
-                     <li>
-                        <a href="#!">About</a>
-                     </li>
-                     <li>
-                        <a href="#!">Shop</a>
-                     </li>
-                     <li>
-                        <a href="#!">Pages</a>
-                     </li>
-                  </ul>
-               </div>
             </div>
             {/* action */}
-            <div>
-               {/* icon */}
-               <span>user</span>
-               <span>heart</span>
-               <span>shop</span>
+            <div className={styles["action"]}>
+               <button>
+                  <img src={user} alt="user" />
+               </button>
+               <button>
+                  <img src={heart} alt="user" />
+                  <span>(0)</span>
+               </button>
+               <button>
+                  <img src={shop} alt="user" />
+                  <span>(0)</span>
+               </button>
             </div>
          </div>
+         <Navbar />
       </header>
    );
 };

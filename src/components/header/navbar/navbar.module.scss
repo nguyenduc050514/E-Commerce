@@ -1,0 +1,32 @@
+@mixin flexItemCenter($direction: row, $items: center) {
+   display: flex;
+   align-items: $items;
+   flex-direction: $direction;
+}
+
+%containerMaxWidth {
+   width: 100%;
+   max-width: 1170px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.navig {
+   &-navbar__list {
+      @include flexItemCenter();
+      @extend %containerMaxWidth;
+      width: fit-content;
+      margin-top: 25px;
+   }
+
+   &-navbar__link {
+      font-family: "Manrope";
+      padding: 20px;
+      font-size: 1.6rem;
+      line-height: 2.8;
+   }
+
+   &-navbar__items:first-child &-navbar__link {
+      padding: 20px 20px 20px 0;
+   }
+}

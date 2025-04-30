@@ -1,6 +1,80 @@
-.header {
+@import "@assets/scss/main.scss";
+@mixin flexItemCenter($direction: row, $items: center) {
+   display: flex;
+   align-items: $items;
+   flex-direction: $direction;
+}
+
+%containerMaxWidth {
    width: 100%;
    max-width: 1170px;
    margin-left: auto;
    margin-right: auto;
+}
+
+.header {
+   background: $primary-bg-color;
+   color: #fff;
+   padding: 2.8rem 0 10px 0;
+   &__container {
+      @include flexItemCenter();
+      @extend %containerMaxWidth;
+      justify-content: space-between;
+   }
+}
+
+.logo {
+   &__title {
+      font-weight: 700;
+      font-size: 2.4rem;
+   }
+}
+
+.navig {
+   @include flexItemCenter(column);
+   &-search__wrapper {
+      @include flexItemCenter();
+      justify-content: space-between;
+      border: 1px solid #fff;
+      padding: 0 0 0 1rem;
+   }
+   &-search__input {
+      font-family: "Manrope";
+      width: 799px;
+      height: 44px;
+      &::placeholder {
+         color: #fff;
+         font-family: Manrope;
+         font-size: 1.4rem;
+         line-height: 2.4;
+         opacity: 0.4;
+      }
+   }
+
+   &-search__button {
+      width: 44px;
+      height: 44px;
+      background: $search-bg-color;
+   }
+
+   &-navbar__list {
+      @include flexItemCenter();
+      margin-top: 2.8rem;
+   }
+
+   &-navbar__link {
+      font-family: "Manrope";
+      padding: 20px;
+      font-size: 1.6rem;
+      line-height: 2.8;
+   }
+
+   &-navbar__items:first-child &-navbar__link {
+      padding: 20px 20px 20px 0;
+   }
+}
+
+.action {
+   @include flexItemCenter($items: flex-start);
+   gap: 18px;
 }
