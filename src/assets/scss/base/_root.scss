@@ -1,0 +1,45 @@
+/* Google Font - dùng cú pháp CSS, vẫn hợp lệ trong SCSS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import "variable.scss";
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: "Roboto Slab", serif;
+   font-size: 1.6rem;
+   color: $primary-text-color;
+}
+
+button {
+   border: none;
+   outline: none;
+   background: transparent;
+   padding: 0;
+   cursor: pointer;
+}
+
+a,
+img,
+button,
+input,
+label,
+textarea,
+select {
+   padding: 0;
+   font-family: inherit;
+   color: inherit;
+   outline: none;
+   border: none;
+}
+
+input,
+textarea {
+   background: transparent;
+}
