@@ -4,16 +4,16 @@ import Navbar from "./navbar/navbar";
 import Action from "./action/action";
 const Header = () => {
    return (
-      <header className={styles["header"]}>
-         <div className={styles["header__container"]}>
+      <header className={styles.header}>
+         <div className={styles.header__container}>
             {/* logo */}
-            <div className={styles["logo"]}>
-               <a href="/" className={styles["logo__title"]}>
+            <div className={styles.logo}>
+               <a href="/" className={styles.logo__title}>
                   Pursuit
                </a>
             </div>
             {/* search */}
-            <div className={styles["navig"]}>
+            <div className={styles.navig}>
                <div className={styles["navig-search__wrapper"]}>
                   <input
                      type="text"

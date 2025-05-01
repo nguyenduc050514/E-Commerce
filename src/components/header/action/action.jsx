@@ -18,7 +18,7 @@ const Action = () => {
    ];
 
    return (
-      <div className={styles["action"]}>
+      <div className={styles.action}>
          {itemIcons.map(({ src, countCart }) => (
             <button key={src}>
                <img src={src} alt="user" className={styles["action-icon"]} />

@@ -21,7 +21,7 @@ const Slider = (props) => {
                <button
                   key={index}
                   className={`${styles["slider-dot"]} ${
-                     index === currentSlide ? styles["active"] : ""
+                     index === currentSlide ? styles.active : ""
                   }`}
                   onClick={() => goToSlide(index)}
                   aria-label={`Go to slide ${index + 1}`}

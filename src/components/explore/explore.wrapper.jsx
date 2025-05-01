@@ -14,9 +14,9 @@ const ExploreWrapper = () => {
       getCategories();
    }, []);
    return (
-      <div className={styles["explore__wrapper"]}>
+      <div className={styles.explore__wrapper}>
          {categories.map(({ id, category, image }) => (
-            <div key={id} className={styles["explore__card"]}>
+            <div key={id} className={styles.explore__card}>
                <div className={styles["explore__card--media"]}>
                   <figure className={styles["explore__card--image"]}>
                      <img

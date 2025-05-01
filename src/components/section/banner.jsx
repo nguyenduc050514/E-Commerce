@@ -15,12 +15,12 @@ const Banner = (props) => {
             </button>
          </div>
          <div className={styles["section-media"]}>
-            <figure className={styles["media__image"]}>
-               <div className={styles["media__wrapper"]}>
+            <figure className={styles.media__image}>
+               <div className={styles.media__wrapper}>
                   <img
                      src={dataHero[currentSlide].bannerImg}
                      alt="Slider Image"
-                     className={styles["media__img"]}
+                     className={styles.media__img}
                   />
                </div>
             </figure>

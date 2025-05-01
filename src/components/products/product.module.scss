@@ -1,0 +1,46 @@
+@import "@assets/scss/main.scss";
+$height-btn: 60px;
+.products {
+   margin-top: 110px;
+   padding-top: 40px;
+
+   &__container {
+      @extend %containerMaxWidth;
+   }
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__heading {
+      font-weight: 700;
+      font-size: 4.2rem;
+      line-height: 1.2;
+      color: $primary-text-color;
+   }
+
+   &__desc {
+      font-family: "Manrope";
+      font-size: 1.8rem;
+      margin-top: 18px;
+      line-height: 1.67;
+      max-width: 470px;
+      color: $desc-text-color;
+   }
+
+   &__more {
+      font-family: "Manrope";
+      font-weight: 600;
+      font-size: 1.8;
+      line-height: 1.67;
+      text-align: center;
+      min-width: 158px;
+      max-height: $height-btn;
+      border: 1px solid $primary-bg-color;
+      line-height: $height-btn;
+      gap: 10px;
+      color: $primary-bg-color;
+   }
+}

@@ -37,7 +37,7 @@ const Section = () => {
    //    return () => clearInterval(timer);
    // }, [dataHero]);
    return (
-      <section className={styles["section"]}>
+      <section className={styles.section}>
          {dataHero.length > 0 && (
             <div className={styles["slider-container"]}>
                <Banner dataHero={dataHero} currentSlide={currentSlide} />
