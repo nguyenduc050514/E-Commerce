@@ -1,0 +1,39 @@
+@import "@assets/scss/main.scss";
+.explore {
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding-top: 70px;
+   }
+}
+
+.explore__card {
+   &--media {
+      background: $primary-card-ng-color;
+      width: 270px;
+      height: 210px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+   }
+   &--image {
+      width: 172px;
+      height: 180px;
+   }
+
+   &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+
+   &--title {
+      margin-top: 18px;
+      font-family: "Manrope";
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.5;
+      text-align: center;
+   }
+}

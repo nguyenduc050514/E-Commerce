@@ -1,8 +1,13 @@
-import axios from "@services/api.customize";
+import { instance, instance2 } from "@services/api.customize";
 
 const getSection = () => {
    const URL_BACKEND = "/banner";
-   return axios.get(URL_BACKEND);
+   return instance.get(URL_BACKEND);
 };
 
-export { getSection };
+const getExploreCategories = () => {
+   const URL_BACKEND = "/categories";
+   return instance2.get(URL_BACKEND);
+};
+
+export { getSection, getExploreCategories };

@@ -5,6 +5,9 @@ const instance = axios.create({
    baseURL: import.meta.env.VITE_URL_BACKEND,
 });
 
+const instance2 = axios.create({
+   baseURL: import.meta.env.VITE_URL_BACKEND2,
+});
 // Interceptor cho REQUEST
 instance.interceptors.request.use(
    function (config) {
@@ -37,4 +40,4 @@ instance.interceptors.response.use(
    }
 );
 
-export default instance;
+export { instance, instance2 };

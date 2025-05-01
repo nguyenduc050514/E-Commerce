@@ -1,0 +1,76 @@
+{
+   "categories": [
+      {
+         "id": 1,
+         "category": "Men Fashion",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "men-fashion"
+      },
+      {
+         "id": 2,
+         "category": "Women Fashion",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "women-fashion"
+      },
+      {
+         "id": 3,
+         "category": "Kids Fashion",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "kids-fashion"
+      },
+      {
+         "id": 4,
+         "category": "Baby Fashion",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "baby-fashion"
+      },
+      {
+         "id": 5,
+         "category": "Mobile Device",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "mobile-device"
+      },
+      {
+         "id": 6,
+         "category": "Computer Device",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "computer-device"
+      },
+      {
+         "id": 7,
+         "category": "Beauty Products",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "beauty-products"
+      },
+      {
+         "id": 8,
+         "category": "Furniture",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "furniture"
+      },
+      {
+         "id": 9,
+         "category": "Smart Watch",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "smart-watch"
+      },
+      {
+         "id": 10,
+         "category": "Modern Shoes",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "modern-shoes"
+      },
+      {
+         "id": 11,
+         "category": "Beautiful Jewelry",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "beautiful-jewelry"
+      },
+      {
+         "id": 12,
+         "category": "Home Products",
+         "image": "https://i.imgur.com/BHcMloN.png",
+         "slug": "home-products"
+      }
+   ]
+}
