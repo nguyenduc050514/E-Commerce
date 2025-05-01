@@ -5,21 +5,31 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
       padding-top: 70px;
+
+      @include breakpoint(medium) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint(small) {
+         grid-template-columns: 1fr;
+      }
    }
 }
 
 .explore__card {
+   cursor: pointer;
    &--media {
       background: $primary-card-ng-color;
-      width: 270px;
-      height: 210px;
+      max-width: 100%;
+      max-height: 100%;
+
+   }
+   &--image {
+      width: 100%;
+      height: 180px;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-   }
-   &--image {
-      width: 172px;
-      height: 180px;
    }
 
    &--img {
@@ -35,5 +45,14 @@
       font-size: 2rem;
       line-height: 1.5;
       text-align: center;
+   }
+
+   &:hover &--media {
+      outline: 2px solid #005d63;
+      outline-offset: 10px;
+   }
+
+   &:hover &--title {
+      color: #005d63;
    }
 }

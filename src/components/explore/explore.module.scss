@@ -1,7 +1,15 @@
 @import "@assets/scss/main.scss";
 .explore {
-   margin-top: 150px;
-   @extend %containerMaxWidth;
+   margin-top: 110px;
+
+   &__container {
+      @extend %containerMaxWidth;
+   }
+
+   @include breakpoint(large) {
+      padding: 0 40px;
+   }
+
    &__heading {
       font-weight: 700;
       font-size: 4.2rem;
@@ -12,7 +20,7 @@
    &__wrapper {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
+      gap: 10px;
       padding-top: 70px;
    }
 }
