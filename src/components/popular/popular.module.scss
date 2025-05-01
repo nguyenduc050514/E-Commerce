@@ -1,0 +1,10 @@
+@import "@assets/scss/main.scss";
+$height-btn: 60px;
+.popular {
+   margin-top: 110px;
+   padding-top: 40px;
+
+   &__container {
+      @extend %containerMaxWidth;
+   }
+}

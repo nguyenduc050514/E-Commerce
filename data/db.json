@@ -72,5 +72,43 @@
          "image": "https://i.imgur.com/rVDEyng.png",
          "slug": "home-products"
       }
-   ]
+   ],
+   "products": {
+      "popular": [
+         {
+            "id": "1",
+            "title": "Mid Century Modern T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$110",
+            "image": "https://i.imgur.com/okAuCqZ.png",
+            "rating": { "stars": 5.0, "count": 18 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "2",
+            "title": "Mid Century Modern T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$139",
+            "image": "https://i.imgur.com/Eu4v8Mw.png",
+            "rating": { "stars": 5.0, "count": 28 },
+            "wishlist": false,
+            "isNew": true,
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "3",
+            "title": "MCorporate Office Shoes",
+            "category": "Men-Shoes",
+            "price": "$399",
+            "image": "https://i.imgur.com/RAF6rik.png",
+            "rating": { "stars": 5.0, "count": 102 },
+            "wishlist": false,
+            "isNew": false,
+            "buttonText": "Add to Cart"
+         }
+      ]
+   }
 }

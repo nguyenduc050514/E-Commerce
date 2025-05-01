@@ -5,9 +5,15 @@ const ExploreWrapper = () => {
    const [categories, setCategories] = useState([]);
 
    const getCategories = async () => {
-      const response = await getExploreCategories();
-      if (response?.data) {
-         setCategories(response.data);
+      try {
+         const response = await getExploreCategories();
+         if (response?.data) {
+            setCategories(response.data);
+         } else {
+            console.error("Server Not found");
+         }
+      } catch (error) {
+         console.log(error.message);
       }
    };
    useEffect(() => {

@@ -1,12 +1,14 @@
 import Explore from "@components/explore";
-import ProductsComponent from "@components/products";
+import Popular from "@components/popular";
+import NewPopular from "@components/newpopular";
 import Section from "@components/section";
 const HomePage = () => {
    return (
       <>
          <Section />
          <Explore />
-         <ProductsComponent />
+         <Popular />
+         <NewPopular />
       </>
    );
 };

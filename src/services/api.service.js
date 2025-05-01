@@ -10,4 +10,9 @@ const getExploreCategories = () => {
    return instance2.get(URL_BACKEND);
 };
 
-export { getSection, getExploreCategories };
+const getAllProductsPopular = () => {
+   const URL_BACKEND = "/products";
+   return instance2.get(URL_BACKEND);
+};
+
+export { getSection, getExploreCategories, getAllProductsPopular };
