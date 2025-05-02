@@ -1,4 +1,4 @@
-import styles from "@components/explore/wrapper.module.scss";
+import styles from "@layout/explore/wrapper.module.scss";
 import { getExploreCategories } from "@services/api.service";
 import { useEffect, useState } from "react";
 const ExploreWrapper = () => {

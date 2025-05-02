@@ -4,6 +4,10 @@ $height-btn: 60px;
    margin-top: 110px;
    padding-top: 40px;
 
+   @include breakpoint(large) {
+      padding: 0 20px;
+   }
+
    &__container {
       @extend %containerMaxWidth;
    }

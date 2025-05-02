@@ -1,4 +1,4 @@
-import Header from "@components/header";
+import Header from "@layout/header";
 import { Outlet } from "react-router";
 function App() {
    return (

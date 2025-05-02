@@ -1,4 +1,4 @@
-import styles from "@components/header/navbar/navbar.module.scss";
+import styles from "@layout/header/navbar/navbar.module.scss";
 import menu from "@assets/icons/menu.svg";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";

@@ -1,7 +1,8 @@
-import Explore from "@components/explore";
-import Popular from "@components/popular";
-import NewPopular from "@components/newpopular";
+import Explore from "@layout/explore";
+import Popular from "@layout/popular";
+import NewPopular from "@layout/newpopular";
 import Section from "@components/section";
+import BestProducts from "@layout/bestpopular";
 const HomePage = () => {
    return (
       <>
@@ -9,6 +10,7 @@ const HomePage = () => {
          <Explore />
          <Popular />
          <NewPopular />
+         <BestProducts />
       </>
    );
 };

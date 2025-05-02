@@ -1,4 +1,4 @@
-import styles from "@components/explore/explore.module.scss";
+import styles from "@layout/explore/explore.module.scss";
 import ExploreWrapper from "./explore.wrapper";
 const Explore = () => {
    return (

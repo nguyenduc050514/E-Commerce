@@ -1,4 +1,4 @@
-import styles from "@components/header/header.module.scss";
+import styles from "@layout/header/header.module.scss";
 import search from "@assets/icons/search.svg";
 import Navbar from "./navbar/navbar";
 import Action from "./action/action";

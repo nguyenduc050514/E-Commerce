@@ -1,7 +1,7 @@
 import ProductsComponent from "@components/productsHead";
 import { getAllProductsPopular } from "@services/api.service";
 import { useEffect, useState } from "react";
-import styles from "@components/popular/popular.module.scss";
+import styles from "@layout/popular/popular.module.scss";
 import CartsProducts from "@components/common/Cart/Carts";
 const Popular = () => {
    const [productsPopular, setProductsPopular] = useState([]);
@@ -22,7 +22,6 @@ const Popular = () => {
             <ProductsComponent
                heading="Our popular products"
                desc="Browse our most popular products and make your day more beautiful and glorious."
-               more="Browse All"
             />
             <CartsProducts productsPopular={productsPopular} />
          </div>

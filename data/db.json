@@ -102,11 +102,87 @@
             "id": "3",
             "title": "MCorporate Office Shoes",
             "category": "Men-Shoes",
-            "price": "$399",
+            "price": "$59",
             "image": "https://i.imgur.com/RAF6rik.png",
             "rating": { "stars": 5.0, "count": 102 },
             "wishlist": false,
             "isNew": false,
+            "buttonText": "Add to Cart"
+         }
+      ],
+      "new": [
+         {
+            "id": "1",
+            "title": "Modern Black T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$199",
+            "image": "https://i.imgur.com/ZYivNhr.png",
+            "rating": { "stars": 5.0, "count": 132 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "New Product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "2",
+            "title": "Women Hand Bags",
+            "category": "Women-Fashion",
+            "price": "$139",
+            "image": "https://i.imgur.com/bZ6I3cF.png",
+            "rating": { "stars": 5.0, "count": 98 },
+            "wishlist": false,
+            "isNew": true,
+            "label": "New Product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "3",
+            "title": "Modern Stylish Shoes",
+            "category": "Men-Shoes",
+            "price": "$153",
+            "image": "https://i.imgur.com/KMHxUCj.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "New Product",
+            "buttonText": "Add to Cart"
+         }
+      ],
+      "best": [
+         {
+            "id": "1",
+            "title": "Modern Black T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$199",
+            "image": "https://i.imgur.com/LwC3Bs8.png",
+            "rating": { "stars": 5.0, "count": 132 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "Best product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "2",
+            "title": "Modern Stylish Shoes",
+            "category": "Women-Shoes",
+            "price": "$139",
+            "image": "https://i.imgur.com/1nHlyJG.png",
+            "rating": { "stars": 5.0, "count": 89 },
+            "wishlist": false,
+            "isNew": true,
+            "label": "Best product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "3",
+            "title": "Women Hand Bags",
+            "category": "Women-Fashion",
+            "price": "$153",
+            "image": "https://i.imgur.com/JBHjCSj.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "Best product",
             "buttonText": "Add to Cart"
          }
       ]

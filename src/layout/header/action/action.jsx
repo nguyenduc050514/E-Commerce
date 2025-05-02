@@ -1,4 +1,4 @@
-import styles from "@components/header/action/action.module.scss";
+import styles from "@layout/header/action/action.module.scss";
 import user from "@assets/icons/user.svg";
 import heart from "@assets/icons/heart.svg";
 import shop from "@assets/icons/Shop.svg";
