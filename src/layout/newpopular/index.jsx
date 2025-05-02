@@ -1,8 +1,10 @@
+import classNames from "classnames/bind";
 import ProductsComponent from "@components/productsHead";
 import styles from "@layout/popular/popular.module.scss";
 import CartsProducts from "@components/common/Cart/Carts";
 import { useEffect, useState } from "react";
 import { getAllProductsPopular } from "@services/api.service";
+const cx = classNames.bind(styles);
 const NewPopular = () => {
    const [NewProducts, setNewProducts] = useState([]);
    const getAllNewProducts = async () => {
@@ -19,8 +21,8 @@ const NewPopular = () => {
       getAllNewProducts();
    }, []);
    return (
-      <div className={styles.popular}>
-         <div className={styles.popular__container}>
+      <div className={cx("popular")}>
+         <div className={cx("popular__container")}>
             <ProductsComponent
                heading="Our New Products"
                desc="Browse our new products and make your day more beautiful and glorious."

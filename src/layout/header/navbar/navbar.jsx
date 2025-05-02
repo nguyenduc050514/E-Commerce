@@ -1,7 +1,9 @@
+import classNames from "classnames/bind";
 import styles from "@layout/header/navbar/navbar.module.scss";
 import menu from "@assets/icons/menu.svg";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
+const cx = classNames.bind(styles);
 const Navbar = () => {
    const [isMobile, setIsMobile] = useState(false);
    const [isToggleMenu, setIsToggleMenu] = useState(false);
@@ -45,9 +47,9 @@ const Navbar = () => {
       },
    ];
    return (
-      <nav className={styles.navig}>
+      <nav className={cx("navig")}>
          {isMobile && (
-            <div className={styles["navig-navbar__menu"]}>
+            <div className={cx("navig-navbar__menu")}>
                <button
                   onClick={() => setIsToggleMenu(!isToggleMenu)}
                   className={`
@@ -64,8 +66,8 @@ const Navbar = () => {
             }`}
          >
             {navbarListItems.map(({ title, href }) => (
-               <li key={title} className={styles["navig-navbar__items"]}>
-                  <Link to={href} className={styles["navig-navbar__link"]}>
+               <li key={title} className={cx("navig-navbar__items")}>
+                  <Link to={href} className={cx("navig-navbar__link")}>
                      {title}
                   </Link>
                </li>

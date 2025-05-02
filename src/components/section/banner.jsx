@@ -1,26 +1,28 @@
+import classNames from "classnames/bind";
 import styles from "@components/section/banner.module.scss";
+const cx = classNames.bind(styles);
 const Banner = (props) => {
    const { dataHero, currentSlide } = props;
    return (
-      <div className={styles["section-banner"]}>
-         <div className={styles["section-ct"]}>
-            <h1 className={styles["section-ct__heading"]}>
+      <div className={cx("section-banner")}>
+         <div className={cx("section-ct")}>
+            <h1 className={cx("section-ct__heading")}>
                {dataHero[currentSlide].heading}
             </h1>
-            <p className={styles["section-ct__desc"]}>
+            <p className={cx("section-ct__desc")}>
                {dataHero[currentSlide].desc}
             </p>
-            <button className={styles["section-ct__more"]}>
+            <button className={cx("section-ct__more")}>
                {dataHero[currentSlide].btnTitle}
             </button>
          </div>
-         <div className={styles["section-media"]}>
-            <figure className={styles.media__image}>
-               <div className={styles.media__wrapper}>
+         <div className={cx("section-media")}>
+            <figure className={cx("media__image")}>
+               <div className={cx("media__wrapper")}>
                   <img
                      src={dataHero[currentSlide].bannerImg}
                      alt="Slider Image"
-                     className={styles.media__img}
+                     className={cx("media__img")}
                   />
                </div>
             </figure>

@@ -1,10 +1,12 @@
+import classNames from "classnames/bind";
 import styles from "@layout/explore/explore.module.scss";
 import ExploreWrapper from "./explore.wrapper";
+const cx = classNames.bind(styles);
 const Explore = () => {
    return (
-      <div className={styles.explore}>
-         <div className={styles.explore__container}>
-            <h1 className={styles.explore__heading}>
+      <div className={cx("explore")}>
+         <div className={cx("explore__container")}>
+            <h1 className={cx("explore__heading")}>
                Explore, find exactly what you need
             </h1>
             <ExploreWrapper />

@@ -1,22 +1,24 @@
+import classNames from "classnames/bind";
 import styles from "@components/section/slider.module.scss";
 import {
    faChevronLeft,
    faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+const cx = classNames.bind(styles);
 const Slider = (props) => {
    const { dataHero, prevSlide, nextSlide, currentSlide, goToSlide } = props;
    return (
-      <div className={styles["slider-controls"]}>
+      <div className={cx("slider-controls")}>
          <button
-            className={styles["slider-arrow"]}
+            className={cx("slider-arrow")}
             onClick={prevSlide}
             aria-label="Previous slide"
          >
             <FontAwesomeIcon icon={faChevronLeft} />
          </button>
 
-         <div className={styles["slider-dots"]}>
+         <div className={cx("slider-dots")}>
             {dataHero.map((_, index) => (
                <button
                   key={index}
@@ -30,7 +32,7 @@ const Slider = (props) => {
          </div>
 
          <button
-            className={styles["slider-arrow"]}
+            className={cx("slider-arrow")}
             onClick={nextSlide}
             aria-label="Next slide"
          >

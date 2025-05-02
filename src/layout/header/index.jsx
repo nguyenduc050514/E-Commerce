@@ -1,28 +1,30 @@
+import classNames from "classnames/bind";
 import styles from "@layout/header/header.module.scss";
 import search from "@assets/icons/search.svg";
 import Navbar from "./navbar/navbar";
 import Action from "./action/action";
+const cx = classNames.bind(styles);
 const Header = () => {
    return (
-      <header className={styles.header}>
-         <div className={styles.header__container}>
+      <header className={cx("header")}>
+         <div className={cx("header__container")}>
             {/* logo */}
-            <div className={styles.logo}>
-               <a href="/" className={styles.logo__title}>
+            <div className={cx("logo")}>
+               <a href="/" className={cx("logo__title")}>
                   Pursuit
                </a>
             </div>
             {/* search */}
-            <div className={styles.navig}>
-               <div className={styles["navig-search__wrapper"]}>
+            <div className={cx("navig")}>
+               <div className={cx("navig-search__wrapper")}>
                   <input
                      type="text"
                      name=""
                      id=""
-                     className={styles["navig-search__input"]}
+                     className={cx("navig-search__input")}
                      placeholder="Search for anything"
                   />
-                  <button className={styles["navig-search__button"]}>
+                  <button className={cx("navig-search__button")}>
                      <img src={search} alt="logo" />
                   </button>
                </div>

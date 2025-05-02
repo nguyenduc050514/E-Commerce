@@ -1,9 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import classNames from "classnames/bind";
 import styles from "@components/section/section.module.scss";
 import { getSection } from "@services/api.service";
 import { useEffect, useState } from "react";
 import Slider from "./sliderControls";
 import Banner from "./banner";
+const cx = classNames.bind(styles);
 const Section = () => {
    const [dataHero, setDataHero] = useState([]);
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,9 +39,9 @@ const Section = () => {
    //    return () => clearInterval(timer);
    // }, [dataHero]);
    return (
-      <section className={styles.section}>
+      <section className={cx("section")}>
          {dataHero.length > 0 && (
-            <div className={styles["slider-container"]}>
+            <div className={cx("slider-container")}>
                <Banner dataHero={dataHero} currentSlide={currentSlide} />
                <Slider
                   dataHero={dataHero}
