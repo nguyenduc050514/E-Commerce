@@ -1,26 +1,12 @@
 @import "@assets/scss/main.scss";
 $height-btn: 60px;
+$font-second-family: "Manrope";
 .product {
    &__card {
-      margin-top: 70px;
       cursor: pointer;
       display: flex;
       flex-direction: column;
       height: 100%; // Đảm bảo card luôn chiếm full height
-   }
-
-   &__wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      align-items: stretch; // Các item sẽ có chiều cao bằng nhau
-      @include breakpoint(medium) {
-         grid-template-columns: repeat(2, 1fr);
-      }
-
-      @include breakpoint(small) {
-         grid-template-columns: 1fr;
-      }
    }
 
    &__image {
@@ -60,14 +46,14 @@ $height-btn: 60px;
    }
 
    &__title {
-      font-family: "Manrope";
+      font-family: $font-second-family;
       font-size: 14px;
       line-height: 24px;
       color: $desc-text-color;
    }
 
    &__name {
-      font-family: "Manrope";
+      font-family: $font-second-family;
       font-weight: 700;
       font-size: 2rem;
       line-height: 1.5;
@@ -87,7 +73,7 @@ $height-btn: 60px;
    }
 
    &__rating {
-      font-family: "Manrope";
+      font-family: $font-second-family;
       display: flex;
       align-items: center;
       color: $desc-text-color;
@@ -95,12 +81,19 @@ $height-btn: 60px;
 
    &__price {
       color: $primary-text-color;
+      &--old {
+         color: #f86624;
+      }
+
+      &--line_through {
+         text-decoration: line-through;
+      }
    }
 
    &__add-cart {
       height: $height-btn;
       background: #fff;
-      font-family: "Manrope";
+      font-family: $font-second-family;
       margin-top: 28px;
       min-width: 100%;
       font-weight: 600;
@@ -116,6 +109,11 @@ $height-btn: 60px;
       background: $primary-bg-color;
       color: #fff;
    }
+
+   &__sale {
+      @include flexItemCenter();
+      gap: 8px;
+   }
 }
 
 .label {
@@ -125,9 +123,27 @@ $height-btn: 60px;
    z-index: 1;
    min-width: 103px;
    padding: 6px 10px;
-   font-family: "Manrope";
+   font-family: $font-second-family;
    font-size: 1.4rem;
    line-height: 1.7;
    color: #fff;
    background: $primary-text-color;
+}
+
+.out__stock {
+   @include flexItemCenter();
+   justify-content: center;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   z-index: 1;
+   width: 100%;
+   padding: 15px 0;
+   font-weight: 600;
+   font-size: 1.8rem;
+   line-height: 1.67;
+   background: #f86624;
+   color: #fff;
+   font-family: $font-second-family;
 }

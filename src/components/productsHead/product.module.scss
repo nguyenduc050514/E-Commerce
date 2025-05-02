@@ -1,8 +1,6 @@
 @import "@assets/scss/main.scss";
 $height-btn: 60px;
 .products {
-
-   
    &__header {
       display: flex;
       align-items: center;
@@ -14,6 +12,7 @@ $height-btn: 60px;
       font-size: 4.2rem;
       line-height: 1.2;
       color: $primary-text-color;
+      max-width: 470px;
    }
 
    &__desc {

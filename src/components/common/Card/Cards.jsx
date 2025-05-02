@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import styles from "@components/common/Cart/carts.module.scss";
+import styles from "@components/common/Card/card.module.scss";
 import heart from "@assets/icons/heart.svg";
 import filledHeart from "@assets/icons/fillHeart.svg";
 import start from "@assets/icons/start.svg";
@@ -9,7 +9,7 @@ const cx = classNames.bind(styles);
 const CartsProducts = ({ productsPopular }) => {
    const { wishlist, showOverview, handleWishlistToggle } = handleCart();
    return (
-      <div className={styles.product__wrapper}>
+      <>
          {productsPopular.map(
             ({
                id,
@@ -20,6 +20,7 @@ const CartsProducts = ({ productsPopular }) => {
                rating,
                title,
                label,
+               price_old,
             }) => (
                <div key={id} className={cx("product__card")}>
                   <figure className={cx("product__image")}>
@@ -38,7 +39,9 @@ const CartsProducts = ({ productsPopular }) => {
                         <OverView />
                      </div>
                      {label && <span className={cx("label")}>{label}</span>}
-                     <span className={cx("out__stock")}>OUT OF STOCK</span>
+                     {!rating.count && (
+                        <span className={cx("out__stock")}>OUT OF STOCK</span>
+                     )}
                   </figure>
                   <div>
                      <div className={cx("product__row")}>
@@ -67,16 +70,31 @@ const CartsProducts = ({ productsPopular }) => {
                               {rating.stars} ({rating.count})
                            </p>
                         </div>
-                        <span className={cx("product__price")}>{price}</span>
+                        <div className={cx("product__sale")}>
+                           <span
+                              className={
+                                 price_old
+                                    ? cx("product__price--line_through")
+                                    : cx("product__price")
+                              }
+                           >
+                              {price}
+                           </span>
+                           {price_old && (
+                              <span className={cx("product__price--old")}>
+                                 {price_old}
+                              </span>
+                           )}
+                        </div>
                      </div>
-                     <button className={cx["product__add-cart"]}>
+                     <button className={cx("product__add-cart")}>
                         {buttonText}
                      </button>
                   </div>
                </div>
             )
          )}
-      </div>
+      </>
    );
 };
 

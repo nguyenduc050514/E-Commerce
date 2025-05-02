@@ -8,7 +8,29 @@ $height-btn: 60px;
       padding: 0 20px;
    }
 
+   &__wrapper {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      align-items: stretch; // Các item sẽ có chiều cao bằng nhau
+      @include breakpoint(medium) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @include breakpoint(small) {
+         grid-template-columns: 1fr;
+      }
+   }
+
    &__container {
       @extend %containerMaxWidth;
    }
+}
+
+.banner-sale {
+   display: grid;
+   margin-top: 70px;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+   align-items: flex-end;
 }

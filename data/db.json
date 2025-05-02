@@ -104,7 +104,7 @@
             "category": "Men-Shoes",
             "price": "$59",
             "image": "https://i.imgur.com/RAF6rik.png",
-            "rating": { "stars": 5.0, "count": 102 },
+            "rating": { "stars": 5.0, "count": 0 },
             "wishlist": false,
             "isNew": false,
             "buttonText": "Add to Cart"
@@ -183,6 +183,64 @@
             "wishlist": false,
             "isNew": false,
             "label": "Best product",
+            "buttonText": "Add to Cart"
+         }
+      ],
+      "sale": [
+         {
+            "id": "1",
+            "title": "Modern Sports Shoes",
+            "category": "Men-Shoes",
+            "price": "$220",
+            "price_old": "$110",
+            "image": "https://i.imgur.com/GU1lahp.png",
+            "rating": { "stars": 5.0, "count": 0 },
+            "count_product": 0,
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "2",
+            "title": "Modern Green Sweater",
+            "category": "Women-Cloths",
+            "price": "$120",
+            "price_old": "$60",
+            "image": "https://i.imgur.com/4rcjF8Z.png",
+            "rating": { "stars": 5.0, "count": 89 },
+            "count_product": 120,
+            "wishlist": false,
+            "isNew": true,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "3",
+            "title": "Modern Headphones",
+            "category": "Women-Fashion",
+            "price": "$180",
+            "price_old": "$90",
+            "image": "https://i.imgur.com/nWu0Icd.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "count_product": 111,
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "4",
+            "title": "Modern Purse Bag",
+            "category": "Women-Fashion",
+            "price": "$210",
+            "price_old": "$105",
+            "image": "https://i.imgur.com/qpG342Z.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "count_product": 120,
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
             "buttonText": "Add to Cart"
          }
       ]

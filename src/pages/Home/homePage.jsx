@@ -3,6 +3,7 @@ import Popular from "@layout/popular";
 import NewPopular from "@layout/newpopular";
 import Section from "@components/section";
 import BestProducts from "@layout/bestpopular";
+import LimitedOfferAlert from "@layout/LimitedOfferAlert";
 const HomePage = () => {
    return (
       <>
@@ -11,6 +12,7 @@ const HomePage = () => {
          <Popular />
          <NewPopular />
          <BestProducts />
+         <LimitedOfferAlert />
       </>
    );
 };

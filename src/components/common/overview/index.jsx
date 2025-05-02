@@ -16,10 +16,3 @@ const OverView = () => {
    );
 };
 export default OverView;
-
-
-/*
-import classNames from "classnames/bind";
-const cx = classNames.bind(styles);
-
-*/

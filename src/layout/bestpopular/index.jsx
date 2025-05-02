@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
 import ProductsComponent from "@components/productsHead";
 import styles from "@layout/popular/popular.module.scss";
-import CartsProducts from "@components/common/Cart/Carts";
+import CartsProducts from "@components/common/Card/Cards";
 import { useEffect, useState } from "react";
 import { getAllProductsPopular } from "@services/api.service";
 const cx = classNames.bind(styles);
@@ -21,13 +21,15 @@ const BestProducts = () => {
       getAllNewProducts();
    }, []);
    return (
-      <div className={cx('popular')}>
-         <div className={cx('popular__container')}>
+      <div className={cx("popular")}>
+         <div className={cx("popular__container")}>
             <ProductsComponent
                heading="Meet our best sellers"
                desc="Browse our most popular products and make your day more beautiful and glorious."
             />
-            <CartsProducts productsPopular={bestProducts} />
+            <div className={cx("popular__wrapper")}>
+               <CartsProducts productsPopular={bestProducts} />
+            </div>
          </div>
       </div>
    );

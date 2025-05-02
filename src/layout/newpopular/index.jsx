@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
 import ProductsComponent from "@components/productsHead";
 import styles from "@layout/popular/popular.module.scss";
-import CartsProducts from "@components/common/Cart/Carts";
+import CartsProducts from "@components/common/Card/Cards";
 import { useEffect, useState } from "react";
 import { getAllProductsPopular } from "@services/api.service";
 const cx = classNames.bind(styles);
@@ -27,7 +27,9 @@ const NewPopular = () => {
                heading="Our New Products"
                desc="Browse our new products and make your day more beautiful and glorious."
             />
-            <CartsProducts productsPopular={NewProducts} />
+            <div className={cx("popular__wrapper")}>
+               <CartsProducts productsPopular={NewProducts} />
+            </div>
          </div>
       </div>
    );
