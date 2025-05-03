@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "@layout/explore/wrapper.module.scss";
 import { getExploreCategories } from "@services/api.service";
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 const cx = classNames.bind(styles);
 const ExploreWrapper = () => {
    const [categories, setCategories] = useState([]);
@@ -23,8 +24,12 @@ const ExploreWrapper = () => {
    }, []);
    return (
       <div className={cx("explore__wrapper")}>
-         {categories.map(({ id, category, image }) => (
-            <div key={id} className={cx("explore__card")}>
+         {categories.map(({ id, category, image, to }) => (
+            <Link
+               to={`categories/${to}`}
+               key={id}
+               className={cx("explore__card")}
+            >
                <div className={cx("explore__card--media")}>
                   <figure className={cx("explore__card--image")}>
                      <img
@@ -35,7 +40,7 @@ const ExploreWrapper = () => {
                   </figure>
                </div>
                <h3 className={cx("explore__card--title")}>{category}</h3>
-            </div>
+            </Link>
          ))}
       </div>
    );

@@ -7,9 +7,8 @@ import About from "@pages/about/index.jsx";
 import Shop from "@pages/shop/index.jsx";
 import Products from "@pages/products/index.jsx";
 import Brand from "@pages/brand/index.jsx";
-import Category from "@pages/category/index.jsx";
+import Category from "@pages/categories/index.jsx";
 import HomePage from "@pages/Home/homePage.jsx";
-
 const router = createBrowserRouter([
    {
       path: "/",
@@ -28,7 +27,7 @@ const router = createBrowserRouter([
             element: <Brand />,
          },
          {
-            path: "/category",
+            path: "/categories/:categoryId", // Dynamic route
             element: <Category />,
          },
          {
@@ -42,6 +41,7 @@ const router = createBrowserRouter([
       ],
    },
 ]);
+
 createRoot(document.getElementById("root")).render(
    <StrictMode>
       <RouterProvider router={router} />

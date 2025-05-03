@@ -4,79 +4,91 @@
          "id": 1,
          "category": "Men Fashion",
          "image": "https://i.imgur.com/BHcMloN.png",
-         "slug": "men-fashion"
+         "slug": "men-fashion",
+         "to": "men"
       },
       {
          "id": 2,
          "category": "Women Fashion",
          "image": "https://i.imgur.com/hDSbYRH.png",
-         "slug": "women-fashion"
+         "slug": "women-fashion",
+         "to": "women"
       },
       {
          "id": 3,
          "category": "Kids Fashion",
          "image": "https://i.imgur.com/T0vUMMF.png",
-         "slug": "kids-fashion"
+         "slug": "kids-fashion",
+         "to": "Kids"
       },
       {
          "id": 4,
          "category": "Baby Fashion",
          "image": "https://i.imgur.com/MveMYjm.png",
-         "slug": "baby-fashion"
+         "slug": "baby-fashion",
+         "to": "baby"
       },
       {
          "id": 5,
          "category": "Mobile Device",
          "image": "https://i.imgur.com/itJG1bS.png",
-         "slug": "mobile-device"
+         "slug": "mobile-device",
+         "to": "mobile"
       },
       {
          "id": 6,
          "category": "Computer Device",
          "image": "https://i.imgur.com/vKshJqO.png",
-         "slug": "computer-device"
+         "slug": "computer-device",
+         "to": "computer"
       },
       {
          "id": 7,
          "category": "Beauty Products",
          "image": "https://i.imgur.com/DyJGHyM.png",
-         "slug": "beauty-products"
+         "slug": "beauty-products",
+         "to": "beauty"
       },
       {
          "id": 8,
          "category": "Furniture",
          "image": "https://i.imgur.com/VP8pJgK.png",
-         "slug": "furniture"
+         "slug": "furniture",
+         "to": "furniture"
       },
       {
          "id": 9,
          "category": "Smart Watch",
          "image": "https://i.imgur.com/N3GXRi4.png",
-         "slug": "smart-watch"
+         "slug": "smart-watch",
+         "to": "smart"
       },
       {
          "id": 10,
          "category": "Modern Shoes",
          "image": "https://i.imgur.com/9jEMx16.png",
-         "slug": "modern-shoes"
+         "slug": "modern-shoes",
+         "to": "modern"
       },
       {
          "id": 11,
          "category": "Beautiful Jewelry",
          "image": "https://i.imgur.com/2w1mNbk.png",
-         "slug": "beautiful-jewelry"
+         "slug": "beautiful-jewelry",
+         "to": "beautiful"
       },
       {
          "id": 12,
          "category": "Home Products",
          "image": "https://i.imgur.com/rVDEyng.png",
-         "slug": "home-products"
+         "slug": "home-products",
+         "to": "/"
       }
    ],
    "products": {
-      "popular": [
+      "all": [
          {
-            "id": "1",
+            "id": "product_1",
             "title": "Mid Century Modern T-Shirt",
             "category": "Men-Cloths",
             "price": "$110",
@@ -88,7 +100,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "2",
+            "id": "product_2",
             "title": "Mid Century Modern T-Shirt",
             "category": "Men-Cloths",
             "price": "$139",
@@ -99,7 +111,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "3",
+            "id": "product_3",
             "title": "MCorporate Office Shoes",
             "category": "Men-Shoes",
             "price": "$59",
@@ -108,11 +120,9 @@
             "wishlist": false,
             "isNew": false,
             "buttonText": "Add to Cart"
-         }
-      ],
-      "new": [
+         },
          {
-            "id": "1",
+            "id": "product_4",
             "title": "Modern Black T-Shirt",
             "category": "Men-Cloths",
             "price": "$199",
@@ -124,7 +134,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "2",
+            "id": "product_5",
             "title": "Women Hand Bags",
             "category": "Women-Fashion",
             "price": "$139",
@@ -136,7 +146,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "3",
+            "id": "product_6",
             "title": "Modern Stylish Shoes",
             "category": "Men-Shoes",
             "price": "$153",
@@ -146,11 +156,9 @@
             "isNew": false,
             "label": "New Product",
             "buttonText": "Add to Cart"
-         }
-      ],
-      "best": [
+         },
          {
-            "id": "1",
+            "id": "product_7",
             "title": "Modern Black T-Shirt",
             "category": "Men-Cloths",
             "price": "$199",
@@ -162,7 +170,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "2",
+            "id": "product_8",
             "title": "Modern Stylish Shoes",
             "category": "Women-Shoes",
             "price": "$139",
@@ -174,7 +182,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "3",
+            "id": "product_9",
             "title": "Women Hand Bags",
             "category": "Women-Fashion",
             "price": "$153",
@@ -184,11 +192,9 @@
             "isNew": false,
             "label": "Best product",
             "buttonText": "Add to Cart"
-         }
-      ],
-      "sale": [
+         },
          {
-            "id": "1",
+            "id": "product_10",
             "title": "Modern Sports Shoes",
             "category": "Men-Shoes",
             "price": "$220",
@@ -202,7 +208,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "2",
+            "id": "product_11",
             "title": "Modern Green Sweater",
             "category": "Women-Cloths",
             "price": "$120",
@@ -216,7 +222,7 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "3",
+            "id": "product_12",
             "title": "Modern Headphones",
             "category": "Women-Fashion",
             "price": "$180",
@@ -230,7 +236,177 @@
             "buttonText": "Add to Cart"
          },
          {
-            "id": "4",
+            "id": "product_13",
+            "title": "Modern Purse Bag",
+            "category": "Women-Fashion",
+            "price": "$210",
+            "price_old": "$105",
+            "image": "https://i.imgur.com/qpG342Z.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "count_product": 120,
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
+            "buttonText": "Add to Cart"
+         }
+      ],
+      "popular": [
+         {
+            "id": "product_1",
+            "title": "Mid Century Modern T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$110",
+            "image": "https://i.imgur.com/okAuCqZ.png",
+            "rating": { "stars": 5.0, "count": 18 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_2",
+            "title": "Mid Century Modern T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$139",
+            "image": "https://i.imgur.com/Eu4v8Mw.png",
+            "rating": { "stars": 5.0, "count": 28 },
+            "wishlist": false,
+            "isNew": true,
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_3",
+            "title": "MCorporate Office Shoes",
+            "category": "Men-Shoes",
+            "price": "$59",
+            "image": "https://i.imgur.com/RAF6rik.png",
+            "rating": { "stars": 5.0, "count": 0 },
+            "wishlist": false,
+            "isNew": false,
+            "buttonText": "Add to Cart"
+         }
+      ],
+      "new": [
+         {
+            "id": "product_4",
+            "title": "Modern Black T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$199",
+            "image": "https://i.imgur.com/ZYivNhr.png",
+            "rating": { "stars": 5.0, "count": 132 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "New Product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_5",
+            "title": "Women Hand Bags",
+            "category": "Women-Fashion",
+            "price": "$139",
+            "image": "https://i.imgur.com/bZ6I3cF.png",
+            "rating": { "stars": 5.0, "count": 98 },
+            "wishlist": false,
+            "isNew": true,
+            "label": "New Product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_6",
+            "title": "Modern Stylish Shoes",
+            "category": "Men-Shoes",
+            "price": "$153",
+            "image": "https://i.imgur.com/KMHxUCj.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "New Product",
+            "buttonText": "Add to Cart"
+         }
+      ],
+      "best": [
+         {
+            "id": "product_7",
+            "title": "Modern Black T-Shirt",
+            "category": "Men-Cloths",
+            "price": "$199",
+            "image": "https://i.imgur.com/LwC3Bs8.png",
+            "rating": { "stars": 5.0, "count": 132 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "Best product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_8",
+            "title": "Modern Stylish Shoes",
+            "category": "Women-Shoes",
+            "price": "$139",
+            "image": "https://i.imgur.com/1nHlyJG.png",
+            "rating": { "stars": 5.0, "count": 89 },
+            "wishlist": false,
+            "isNew": true,
+            "label": "Best product",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_9",
+            "title": "Women Hand Bags",
+            "category": "Women-Fashion",
+            "price": "$153",
+            "image": "https://i.imgur.com/JBHjCSj.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "wishlist": false,
+            "isNew": false,
+            "label": "Best product",
+            "buttonText": "Add to Cart"
+         }
+      ],
+      "sale": [
+         {
+            "id": "product_10",
+            "title": "Modern Sports Shoes",
+            "category": "Men-Shoes",
+            "price": "$220",
+            "price_old": "$110",
+            "image": "https://i.imgur.com/GU1lahp.png",
+            "rating": { "stars": 5.0, "count": 0 },
+            "count_product": 0,
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_11",
+            "title": "Modern Green Sweater",
+            "category": "Women-Cloths",
+            "price": "$120",
+            "price_old": "$60",
+            "image": "https://i.imgur.com/4rcjF8Z.png",
+            "rating": { "stars": 5.0, "count": 89 },
+            "count_product": 120,
+            "wishlist": false,
+            "isNew": true,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_12",
+            "title": "Modern Headphones",
+            "category": "Women-Fashion",
+            "price": "$180",
+            "price_old": "$90",
+            "image": "https://i.imgur.com/nWu0Icd.png",
+            "rating": { "stars": 5.0, "count": 39 },
+            "count_product": 111,
+            "wishlist": false,
+            "isNew": false,
+            "label": "",
+            "buttonText": "Add to Cart"
+         },
+         {
+            "id": "product_13",
             "title": "Modern Purse Bag",
             "category": "Women-Fashion",
             "price": "$210",

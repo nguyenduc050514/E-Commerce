@@ -23,7 +23,6 @@ const LimitedOfferAlert = () => {
    useEffect(() => {
       getAllSale();
    }, []);
-   console.log(firstProduct);
    return (
       <div className={cx("popular")}>
          <div className={cx("popular__container")}>

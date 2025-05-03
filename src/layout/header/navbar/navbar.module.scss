@@ -4,16 +4,33 @@
    position: relative;
    padding: 0;
    margin: 0;
+   width: 100%;
+
+   // Container for better responsive control
+   &-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+
+      @include breakpoint(medium) {
+         justify-content: space-between;
+      }
+   }
+
    &-navbar__list {
       @include flexItemCenter();
       @extend %containerMaxWidth;
       width: fit-content;
       margin-top: 10px;
+      transition: all 0.3s ease;
+      list-style: none; // Modern clean look
+
       @include breakpoint(large) {
          margin-top: 15px;
       }
+
       @include breakpoint(medium) {
-         display: none;
          position: absolute;
          top: 100%;
          left: 0;
@@ -21,12 +38,22 @@
          background: $primary-bg-color;
          flex-direction: column;
          z-index: 1000;
-         padding: 0;
+         padding: 1rem 0;
          margin-top: 0;
-         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); // Subtle modern shadow
+         opacity: 0;
+         transform: translateY(-10px);
+         visibility: hidden;
+         transition: opacity 0.3s ease, transform 0.3s ease,
+            visibility 0s linear 0.3s;
+         border-radius: 0 0 8px 8px; // Modern rounded corners
 
-         &.active {
+         &.navig-navbar__list--active {
             display: flex;
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            transition: opacity 0.3s ease, transform 0.3s ease;
          }
       }
    }
@@ -36,23 +63,78 @@
       padding: 20px;
       font-size: 1.6rem;
       line-height: 2.8;
+      transition: all 0.25s ease; // Smoother transitions
+      position: relative; // For hover effect
+
+      &:after {
+         content: "";
+         position: absolute;
+         bottom: 15px;
+         left: 50%;
+         width: 0;
+         height: 2px;
+         background: $primary-text-color;
+         transition: all 0.25s ease;
+         transform: translateX(-50%);
+      }
+
+      &:hover {
+         color: $search-bg-color;
+
+         &:after {
+            width: 30px; // Modern underline effect on hover
+         }
+      }
 
       @include breakpoint(large) {
          padding: 17px;
          font-size: 1.4rem;
          line-height: 2.5;
+
+         &:after {
+            bottom: 12px;
+         }
       }
 
       @include breakpoint(medium) {
          display: block;
-         padding: 10px 0;
+         padding: 15px 20px;
+         width: 100%;
+         text-align: left;
+         font-weight: 500;
+
+         &:after {
+            bottom: auto;
+            left: 0;
+            top: 50%;
+            width: 3px;
+            height: 0;
+            transform: translateY(-50%);
+         }
+
+         &:hover:after {
+            width: 3px;
+            height: 70%;
+         }
       }
    }
 
    &-navbar__items {
       @include breakpoint(medium) {
          width: 100%;
-         text-align: center;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.05); // Lighter separator
+
+         &:last-child {
+            border-bottom: none;
+         }
+      }
+   }
+
+   &-navbar__menu {
+      display: none; // Hidden by default on desktop
+
+      @include breakpoint(medium) {
+         display: block; // Always display on mobile
       }
    }
 
@@ -60,5 +142,21 @@
       @include flexItemCenter();
       gap: 10px;
       padding: 15px 15px 15px 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: inherit;
+      font-size: 1.4rem;
+      transition: transform 0.2s ease;
+
+      &:hover {
+         opacity: 0.8;
+         transform: scale(1.05); // Subtle scale effect on hover
+      }
+
+      img {
+         width: 24px;
+         height: 24px;
+      }
    }
 }
