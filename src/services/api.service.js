@@ -22,15 +22,21 @@ const removeWishlist = (id) => {
 
 const addWishList = (id) => {
    const URL_BACKEND = "/wishlist";
-   return instance2.post(URL_BACKEND, {
+   const data = {
       id,
       addedAt: new Date().toISOString(),
-   });
+   };
+   return instance2.post(URL_BACKEND, data);
 };
 
 const getWishList = () => {
    const URL_BACKEND = "/wishlist";
    return instance2.get(URL_BACKEND);
+};
+
+const deleteWishList = (id) => {
+   const URL_BACKEND = `/wishlist/${id}`;
+   return instance2.delete(URL_BACKEND);
 };
 
 export {
@@ -40,4 +46,5 @@ export {
    removeWishlist,
    getWishList,
    addWishList,
+   deleteWishList,
 };

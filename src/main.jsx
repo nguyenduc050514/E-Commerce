@@ -9,6 +9,7 @@ import Products from "@pages/products/index.jsx";
 import Brand from "@pages/brand/index.jsx";
 import Category from "@pages/categories/index.jsx";
 import HomePage from "@pages/Home/homePage.jsx";
+import { WishlistProvider } from "@context/WishlistContext.jsx";
 const router = createBrowserRouter([
    {
       path: "/",
@@ -44,6 +45,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
    <StrictMode>
-      <RouterProvider router={router} />
+      <WishlistProvider>
+         <RouterProvider router={router} />
+      </WishlistProvider>
    </StrictMode>
 );

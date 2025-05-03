@@ -1,35 +1,25 @@
 import { useCallback, useEffect, useState } from "react";
-import axios from "axios";
-
-// JSON server API base URL - adjust to your configuration
-const API_URL = "http://localhost:3001";
-
-const useCart = () => {
+import {
+   addWishList,
+   deleteWishList,
+   getWishList,
+} from "@services/api.service";
+const useCard = () => {
    const [showOverview, setShowOverview] = useState(null);
    const [wishlist, setWishlist] = useState({});
-   const [isLoading, setIsLoading] = useState(true);
-
-   // Load wishlist data from JSON server on component mount
+   const fetchWishlist = async () => {
+      try {
+         const response = await getWishList();
+         const wishlistObject = {};
+         response.data.forEach((item) => {
+            wishlistObject[item.id] = true;
+         });
+         setWishlist(wishlistObject);
+      } catch (error) {
+         console.error("Error fetching wishlist:", error);
+      }
+   };
    useEffect(() => {
-      const fetchWishlist = async () => {
-         try {
-            setIsLoading(true);
-            const response = await axios.get(`${API_URL}/wishlist`);
-
-            // Convert array data to object format for easier usage
-            const wishlistObject = {};
-            response.data.forEach((item) => {
-               wishlistObject[item.id] = true;
-            });
-
-            setWishlist(wishlistObject);
-         } catch (error) {
-            console.error("Error fetching wishlist:", error);
-         } finally {
-            setIsLoading(false);
-         }
-      };
-
       fetchWishlist();
    }, []);
 
@@ -50,29 +40,19 @@ const useCart = () => {
    const handleWishlistToggle = useCallback(
       async (id) => {
          const newValue = !wishlist[id];
-
-         // Update local state immediately for responsiveness
          setWishlist((prev) => ({
             ...prev,
             [id]: newValue,
          }));
-
          setShowOverview(id);
-
          try {
             if (newValue) {
-               // Add to wishlist in JSON server
-               await axios.post(`${API_URL}/wishlist`, {
-                  id,
-                  addedAt: new Date().toISOString(),
-               });
+               await addWishList(id);
             } else {
-               // Remove from wishlist in JSON server
-               await axios.delete(`${API_URL}/wishlist/${id}`);
+               await deleteWishList(id);
             }
          } catch (error) {
             console.error("Error updating wishlist:", error);
-            // Revert local state if API call fails
             setWishlist((prev) => ({
                ...prev,
                [id]: !newValue,
@@ -86,8 +66,7 @@ const useCart = () => {
       wishlist,
       showOverview,
       handleWishlistToggle,
-      isLoading,
    };
 };
 
-export default useCart;
+export default useCard;
