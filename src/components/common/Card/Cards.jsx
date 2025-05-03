@@ -8,6 +8,7 @@ import handleCart from "./handleCart";
 const cx = classNames.bind(styles);
 const CartsProducts = ({ productsPopular }) => {
    const { wishlist, showOverview, handleWishlistToggle } = handleCart();
+   console.log(wishlist);
    return (
       <>
          {productsPopular.map(

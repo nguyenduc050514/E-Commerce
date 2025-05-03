@@ -1,0 +1,43 @@
+@import "@assets/scss/main.scss";
+$font-family: "Manrope";
+.category-products {
+   &__filter {
+      margin-top: 110px;
+      padding-top: 40px;
+   }
+
+   &__container {
+      @extend %containerMaxWidth;
+   }
+
+   &__wrapper {
+      @include flexItemCenter();
+      justify-content: center;
+      gap: 30px;
+   }
+
+   &__filter-btn {
+      font-family: $font-family;
+      min-width: 170px;
+      height: 55px;
+      line-height: 55px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid #005d63;
+      font-size: 1.8rem;
+      line-height: 1.67;
+      color: #005d63;
+   }
+
+   &__filter-btn--active {
+      color: #fff;
+      background: #005d63;
+   }
+}
+
+.products {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+   margin-top: 70px;
+}

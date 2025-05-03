@@ -12,7 +12,7 @@ const Banner = () => {
                <img
                   src={mwaBanner}
                   alt="Wear the best"
-                  className={cx("mwa-wrapper--img")}
+                  className={cx("mwa-wrapper-banner--img")}
                />
             </div>
             <div className={cx("mwa-wrapper-image")}>
@@ -24,14 +24,16 @@ const Banner = () => {
             </div>
             <div className={cx("mwa-container")}>
                <h1 className={cx("mwa-wrapper--heading")}>
-                  Wear the{" "}
-                  <span className={cx("mwa-circle")}>
-                     best
-                     <img
-                        src={accessery}
-                        alt=""
-                        className={cx("mwa-circle--accessery")}
-                     />
+                  <span className={cx("mwa-first-line")}>Wear the</span>
+                  <span className={cx("mwa-second-line")}>
+                     <span className={cx("mwa-circle")}>
+                        best
+                        <img
+                           src={accessery}
+                           alt=""
+                           className={cx("mwa-circle--accessery")}
+                        />
+                     </span>
                   </span>
                </h1>
                <p className={cx("mwa-wrapper--desc")}>
