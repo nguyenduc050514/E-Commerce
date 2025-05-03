@@ -51,11 +51,7 @@ const Navbar = () => {
                })}
             >
                {navbarListItems.map(({ title, href }) => (
-                  <li
-                     key={title}
-                     className={cx("navig-navbar__items")}
-                     onClick={() => console.log(123)}
-                  >
+                  <li key={title} className={cx("navig-navbar__items")}>
                      <Link
                         to={href}
                         className={cx("navig-navbar__link")}

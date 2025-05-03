@@ -13,6 +13,8 @@ export default defineConfig({
          "@scss": path.resolve(__dirname, "src/assets/scss"),
          "@services": path.resolve(__dirname, "src/services"),
          "@layout": path.resolve(__dirname, "src/layout"),
+         "@hooks": path.resolve(__dirname, "src/hooks"),
+         "@context": path.resolve(__dirname, "src/context"),
       },
    },
 });

@@ -1,20 +1,37 @@
 @import "@assets/scss/main.scss";
-
 .header {
+   position: fixed;
+   z-index: 1000;
+   top: 0;
+   right: 0;
+   left: 0;
    background: $primary-bg-color;
    color: #fff;
    padding-top: 17px;
+   transition: padding 0.3s ease, background 0.3s ease;
    &__container {
       @include flexItemCenter();
       @extend %containerMaxWidth;
       justify-content: space-between;
    }
+
+   &--scrolled {
+      padding-top: 10px; // Slightly smaller padding when scrolled
+      background: darken($primary-bg-color, 5%); // Slightly darker background
+   }
+
    @include breakpoint(large) {
       padding: 10px 40px 0;
+      &.header--scrolled {
+         padding: 5px 40px 0; // Even smaller padding when scrolled
+      }
    }
 
    @include breakpoint(medium) {
       padding: 25px 40px 0;
+      &.header--scrolled {
+         padding: 15px 40px 0; // Adjusted padding for medium screens
+      }
    }
 }
 

@@ -15,4 +15,29 @@ const getAllProductsPopular = () => {
    return instance2.get(URL_BACKEND);
 };
 
-export { getSection, getExploreCategories, getAllProductsPopular };
+const removeWishlist = (id) => {
+   const URL_BACKEND = `/wishlist/${id}`;
+   return instance2.delete(URL_BACKEND);
+};
+
+const addWishList = (id) => {
+   const URL_BACKEND = "/wishlist";
+   return instance2.post(URL_BACKEND, {
+      id,
+      addedAt: new Date().toISOString(),
+   });
+};
+
+const getWishList = () => {
+   const URL_BACKEND = "/wishlist";
+   return instance2.get(URL_BACKEND);
+};
+
+export {
+   getSection,
+   getExploreCategories,
+   getAllProductsPopular,
+   removeWishlist,
+   getWishList,
+   addWishList,
+};

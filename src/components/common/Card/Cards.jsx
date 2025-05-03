@@ -4,11 +4,10 @@ import heart from "@assets/icons/heart.svg";
 import filledHeart from "@assets/icons/fillHeart.svg";
 import start from "@assets/icons/start.svg";
 import OverView from "@components/common/overview";
-import handleCart from "./handleCart";
+import HandleCard from "./handleCard";
 const cx = classNames.bind(styles);
 const CartsProducts = ({ productsPopular }) => {
-   const { wishlist, showOverview, handleWishlistToggle } = handleCart();
-   console.log(wishlist);
+   const { wishlist, showOverview, handleWishlistToggle } = HandleCard();
    return (
       <>
          {productsPopular.map(

@@ -3,7 +3,7 @@
 .action {
    @include flexItemCenter($items: flex-start);
    gap: 18px;
-
+   
    @include breakpoint(large) {
       gap: 10px;
    }

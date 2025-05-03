@@ -7,7 +7,9 @@
          "@assets/*": ["src/assets/*"],
          "@scss/*": ["src/assets/scss/*"],
          "@services/*": ["src/services/*"],
-         "@layout/*": ["src/layout/*"]
+         "@layout/*": ["src/layout/*"],
+         "@hooks/*": ["src/hooks/*"],
+         "@context/*": ["src/context/*"]
       }
    }
 }
