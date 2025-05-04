@@ -65,13 +65,11 @@
          transform: translateY(-50%) rotate(310deg);
          transition: border-color 0.3s ease;
       }
-
       &:hover {
          color: #2979ff;
-         border-color: #2979ff;
-
+         border-color: inherit;
          &::after {
-            border-color: #2979ff;
+            border-color: inherit;
          }
       }
    }

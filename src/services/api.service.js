@@ -49,6 +49,66 @@ const getAllBlogsList = () => {
    return instance2.get(URL_BACKEND);
 };
 
+const getAllCart = () => {
+   const URL_BACKEND = "/carts";
+   return instance2.get(URL_BACKEND);
+};
+
+// Function to add/update cart items in the backend
+const addCartList = async (
+   id,
+   category,
+   image,
+   price,
+   rating,
+   title,
+   label,
+   price_old,
+   quantity
+) => {
+   try {
+      // Check if item exists
+      const response = await instance2.get(`http://localhost:3001/carts`, {
+         params: { id: id },
+      });
+
+      const existingItems = response.data;
+
+      if (existingItems.length > 0) {
+         // Item exists - update with PATCH request
+         const existingItem = existingItems[0];
+         const updatedItem = {
+            ...existingItem,
+            quantity: quantity,
+         };
+
+         await instance2.patch(
+            `http://localhost:3001/carts/${existingItem.id}`,
+            updatedItem
+         );
+      } else {
+         // Item doesn't exist - create with POST request
+         const newCartItem = {
+            id,
+            category,
+            image,
+            price,
+            rating,
+            title,
+            label,
+            price_old,
+            quantity,
+         };
+
+         await instance2.post("http://localhost:3001/carts", newCartItem);
+      }
+
+      // Show success modal/notification (you already have this implemented)
+   } catch (error) {
+      console.error("Error in addCartList:", error);
+      throw error;
+   }
+};
 export {
    getSection,
    getExploreCategories,
@@ -59,4 +119,6 @@ export {
    deleteWishList,
    getAllBrandsProducts,
    getAllBlogsList,
+   getAllCart,
+   addCartList,
 };

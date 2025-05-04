@@ -5,9 +5,50 @@ import filledHeart from "@assets/icons/fillHeart.svg";
 import start from "@assets/icons/start.svg";
 import OverView from "@components/common/overview";
 import HandleCard from "./handleCard";
+import { useState } from "react";
+import CartNotificationModal from "../cart/CartNotification";
 const cx = classNames.bind(styles);
+
 const CartsProducts = ({ productsPopular }) => {
-   const { wishlist, showOverview, handleWishlistToggle } = HandleCard();
+   const { wishlist, showOverview, handleWishlistToggle, handleAddCart } =
+      HandleCard();
+   const [isShowNotification, setShowNotification] = useState(false);
+   const [addedProductId, setAddedProductId] = useState(null);
+   // Function to handle adding to cart and showing notification
+   const handleAddToCart = (
+      id,
+      category,
+      image,
+      price,
+      rating,
+      title,
+      label,
+      price_old = null
+   ) => {
+      // Call the original handleAddCart function
+      price_old
+         ? handleAddCart(
+              id,
+              category,
+              image,
+              price,
+              rating,
+              title,
+              label,
+              price_old
+           )
+         : handleAddCart(id, category, image, price, rating, title, label);
+
+      // Set the added product ID and show notification
+      setAddedProductId(id);
+      setShowNotification(true);
+   };
+
+   // Function to close the notification modal
+   const closeNotification = () => {
+      setShowNotification(false);
+   };
+
    return (
       <>
          {productsPopular.map(
@@ -57,9 +98,9 @@ const CartsProducts = ({ productsPopular }) => {
                            onClick={() => handleWishlistToggle(id)}
                            style={{
                               filter: wishlist[id]
-                                 ? "none" // Hiển thị màu nguyên bản nếu đã thêm vào wishlist
+                                 ? "none"
                                  : "brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(80%) contrast(100%",
-                              cursor: "pointer", // Thêm con trỏ pointer khi hover
+                              cursor: "pointer",
                            }}
                         />
                      </div>
@@ -88,13 +129,33 @@ const CartsProducts = ({ productsPopular }) => {
                            )}
                         </div>
                      </div>
-                     <button className={cx("product__add-cart")}>
+                     <button
+                        className={cx("product__add-cart")}
+                        onClick={() =>
+                           handleAddToCart(
+                              id,
+                              category,
+                              image,
+                              price,
+                              rating,
+                              title,
+                              label,
+                              price_old
+                           )
+                        }
+                     >
                         {buttonText}
                      </button>
                   </div>
                </div>
             )
          )}
+         <CartNotificationModal
+            isOpen={isShowNotification}
+            onClose={closeNotification}
+            addedProductId={addedProductId}
+            isTrue={false}
+         />
       </>
    );
 };

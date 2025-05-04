@@ -8,8 +8,8 @@ import { useWishlist } from "@context/WishlistContext";
 
 const Header = () => {
    const cx = classNames.bind(styles);
-   const { wishlist } = useWishlist();
-   const [isScrolled, setIsScrolled] = useState(false); 
+   const { wishlist, cartsProducts } = useWishlist();
+   const [isScrolled, setIsScrolled] = useState(false);
    useEffect(() => {
       const handleScroll = () => {
          if (window.scrollY > 50) {
@@ -51,7 +51,7 @@ const Header = () => {
                </div>
                {/* navbar */}
             </div>
-            <Action wishlist={wishlist} />
+            <Action wishlist={wishlist} cartsProducts={cartsProducts} />
          </div>
          <Navbar />
       </header>

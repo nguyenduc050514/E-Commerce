@@ -1,772 +1,853 @@
 {
-   "wishlist": [
+  "wishlist": [
+    {
+      "id": "product_5",
+      "addedAt": "2025-05-03T14:56:08.835Z"
+    },
+    {
+      "id": "product_4",
+      "addedAt": "2025-05-03T15:09:03.383Z"
+    },
+    {
+      "id": "product_17",
+      "addedAt": "2025-05-03T15:24:41.965Z"
+    },
+    {
+      "id": "product_18",
+      "addedAt": "2025-05-03T15:32:13.015Z"
+    },
+    {
+      "id": "product_16",
+      "addedAt": "2025-05-03T16:12:51.073Z"
+    },
+    {
+      "id": "product_14",
+      "addedAt": "2025-05-03T16:12:52.232Z"
+    },
+    {
+      "id": "product_15",
+      "addedAt": "2025-05-03T16:13:12.856Z"
+    },
+    {
+      "id": "product_6",
+      "addedAt": "2025-05-04T07:03:57.096Z"
+    },
+    {
+      "id": "product_8",
+      "addedAt": "2025-05-04T08:29:18.071Z"
+    },
+    {
+      "id": "product_10",
+      "addedAt": "2025-05-04T08:29:29.367Z"
+    },
+    {
+      "id": "product_13",
+      "addedAt": "2025-05-04T16:28:04.194Z"
+    }
+  ],
+  "carts": [
+    {
+      "id": "product_11",
+      "category": "Women-Cloths",
+      "image": "https://i.imgur.com/4rcjF8Z.png",
+      "price": "120",
+      "rating": {
+        "stars": 5,
+        "count": 89
+      },
+      "title": "Modern Green Sweater",
+      "label": "",
+      "price_old": "60",
+      "quantity": 1
+    },
+    {
+      "id": "product_10",
+      "category": "Men-Shoes",
+      "image": "https://i.imgur.com/GU1lahp.png",
+      "price": "220",
+      "rating": {
+        "stars": 5,
+        "count": 0
+      },
+      "title": "Modern Sports Shoes",
+      "label": "",
+      "price_old": "110",
+      "quantity": 1
+    },
+    {
+      "id": "product_13",
+      "category": "Women-Fashion",
+      "image": "https://i.imgur.com/qpG342Z.png",
+      "price": "210",
+      "rating": {
+        "stars": 5,
+        "count": 39
+      },
+      "title": "Modern Purse Bag",
+      "label": "",
+      "price_old": "105",
+      "quantity": 1
+    },
+    {
+      "id": "product_9",
+      "category": "Women-Fashion",
+      "image": "https://i.imgur.com/JBHjCSj.png",
+      "price": "153",
+      "rating": {
+        "stars": 5,
+        "count": 39
+      },
+      "title": "Women Hand Bags",
+      "label": "Best product",
+      "price_old": null,
+      "quantity": 1
+    },
+    {
+      "id": "product_2",
+      "category": "Men-Cloths",
+      "image": "https://i.imgur.com/Eu4v8Mw.png",
+      "price": "139",
+      "rating": {
+        "stars": 5,
+        "count": 28
+      },
+      "title": "Mid Century Modern T-Shirt",
+      "price_old": null,
+      "quantity": 1
+    },
+    {
+      "id": "product_1",
+      "category": "Men-Cloths",
+      "image": "https://i.imgur.com/okAuCqZ.png",
+      "price": "110",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "title": "Mid Century Modern T-Shirt",
+      "label": "",
+      "price_old": null,
+      "quantity": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "category": "Men Fashion",
+      "image": "https://i.imgur.com/BHcMloN.png",
+      "slug": "men-fashion",
+      "to": "men"
+    },
+    {
+      "id": "2",
+      "category": "Women Fashion",
+      "image": "https://i.imgur.com/hDSbYRH.png",
+      "slug": "women-fashion",
+      "to": "women"
+    },
+    {
+      "id": "3",
+      "category": "Kids Fashion",
+      "image": "https://i.imgur.com/T0vUMMF.png",
+      "slug": "kids-fashion",
+      "to": "Kids"
+    },
+    {
+      "id": "4",
+      "category": "Baby Fashion",
+      "image": "https://i.imgur.com/MveMYjm.png",
+      "slug": "baby-fashion",
+      "to": "baby"
+    },
+    {
+      "id": "5",
+      "category": "Mobile Device",
+      "image": "https://i.imgur.com/itJG1bS.png",
+      "slug": "mobile-device",
+      "to": "mobile"
+    },
+    {
+      "id": "6",
+      "category": "Computer Device",
+      "image": "https://i.imgur.com/vKshJqO.png",
+      "slug": "computer-device",
+      "to": "computer"
+    },
+    {
+      "id": "7",
+      "category": "Beauty Products",
+      "image": "https://i.imgur.com/DyJGHyM.png",
+      "slug": "beauty-products",
+      "to": "beauty"
+    },
+    {
+      "id": "8",
+      "category": "Furniture",
+      "image": "https://i.imgur.com/VP8pJgK.png",
+      "slug": "furniture",
+      "to": "furniture"
+    },
+    {
+      "id": "9",
+      "category": "Smart Watch",
+      "image": "https://i.imgur.com/N3GXRi4.png",
+      "slug": "smart-watch",
+      "to": "smart"
+    },
+    {
+      "id": "10",
+      "category": "Modern Shoes",
+      "image": "https://i.imgur.com/9jEMx16.png",
+      "slug": "modern-shoes",
+      "to": "modern"
+    },
+    {
+      "id": "11",
+      "category": "Beautiful Jewelry",
+      "image": "https://i.imgur.com/2w1mNbk.png",
+      "slug": "beautiful-jewelry",
+      "to": "beautiful"
+    },
+    {
+      "id": "12",
+      "category": "Home Products",
+      "image": "https://i.imgur.com/rVDEyng.png",
+      "slug": "home-products",
+      "to": "/"
+    }
+  ],
+  "products": {
+    "all": [
       {
-         "id": "product_5",
-         "addedAt": "2025-05-03T14:56:08.835Z"
+        "id": "product_14",
+        "title": "Mid Century Modern Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "110",
+        "image": "https://i.imgur.com/oxMOl0z.png",
+        "rating": {
+          "stars": 5,
+          "count": 540
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_2",
-         "addedAt": "2025-05-03T14:57:39.197Z"
+        "id": "product_15",
+        "title": "Mid Century Modern T-Shirt",
+        "category": "Women-Cloths",
+        "category_id": "women",
+        "price": "139",
+        "image": "https://i.imgur.com/is9V4Kv.png",
+        "rating": {
+          "stars": 5,
+          "count": 542
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_4",
-         "addedAt": "2025-05-03T15:09:03.383Z"
+        "id": "product_16",
+        "title": "Corporate Office Shoes",
+        "category": "Men-Shoes",
+        "category_id": "men",
+        "price": "399",
+        "image": "https://i.imgur.com/QQFdcyp.png",
+        "rating": {
+          "stars": 5,
+          "count": 598
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_3",
-         "addedAt": "2025-05-03T15:16:46.853Z"
+        "id": "product_1",
+        "title": "Mid Century Modern T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "110",
+        "image": "https://i.imgur.com/okAuCqZ.png",
+        "rating": {
+          "stars": 5,
+          "count": 18
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_1",
-         "addedAt": "2025-05-03T15:16:51.078Z"
+        "id": "product_2",
+        "title": "Mid Century Modern T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "139",
+        "image": "https://i.imgur.com/Eu4v8Mw.png",
+        "rating": {
+          "stars": 5,
+          "count": 28
+        },
+        "wishlist": false,
+        "isNew": true,
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_17",
-         "addedAt": "2025-05-03T15:24:41.965Z"
+        "id": "product_3",
+        "title": "MCorporate Office Shoes",
+        "category": "Men-Shoes",
+        "category_id": "men",
+        "price": "59",
+        "image": "https://i.imgur.com/RAF6rik.png",
+        "rating": {
+          "stars": 5,
+          "count": 0
+        },
+        "wishlist": false,
+        "isNew": false,
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_18",
-         "addedAt": "2025-05-03T15:32:13.015Z"
+        "id": "product_4",
+        "title": "Modern Black T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "199",
+        "image": "https://i.imgur.com/ZYivNhr.png",
+        "rating": {
+          "stars": 5,
+          "count": 132
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "New Product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_16",
-         "addedAt": "2025-05-03T16:12:51.073Z"
+        "id": "product_5",
+        "title": "Women Hand Bags",
+        "category": "Women-Fashion",
+        "price": "139",
+        "image": "https://i.imgur.com/bZ6I3cF.png",
+        "rating": {
+          "stars": 5,
+          "count": 98
+        },
+        "wishlist": false,
+        "isNew": true,
+        "label": "New Product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_14",
-         "addedAt": "2025-05-03T16:12:52.232Z"
+        "id": "product_6",
+        "title": "Modern Stylish Shoes",
+        "category": "Men-Shoes",
+        "category_id": "men",
+        "price": "153",
+        "image": "https://i.imgur.com/KMHxUCj.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "New Product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_15",
-         "addedAt": "2025-05-03T16:13:12.856Z"
+        "id": "product_7",
+        "title": "Modern Black T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "199",
+        "image": "https://i.imgur.com/LwC3Bs8.png",
+        "rating": {
+          "stars": 5,
+          "count": 132
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "Best product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_6",
-         "addedAt": "2025-05-04T07:03:57.096Z"
+        "id": "product_8",
+        "title": "Modern Stylish Shoes",
+        "category": "Women-Shoes",
+        "category_id": "women",
+        "price": "139",
+        "image": "https://i.imgur.com/1nHlyJG.png",
+        "rating": {
+          "stars": 5,
+          "count": 89
+        },
+        "wishlist": false,
+        "isNew": true,
+        "label": "Best product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_8",
-         "addedAt": "2025-05-04T08:29:18.071Z"
+        "id": "product_9",
+        "title": "Women Hand Bags",
+        "category": "Women-Fashion",
+        "price": "153",
+        "image": "https://i.imgur.com/JBHjCSj.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "Best product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "product_10",
-         "addedAt": "2025-05-04T08:29:29.367Z"
+        "id": "product_10",
+        "title": "Modern Sports Shoes",
+        "category": "Men-Shoes",
+        "category_id": "men",
+        "price": "220",
+        "price_old": "110",
+        "image": "https://i.imgur.com/GU1lahp.png",
+        "rating": {
+          "stars": 5,
+          "count": 0
+        },
+        "count_product": 0,
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_11",
+        "title": "Modern Green Sweater",
+        "category": "Women-Cloths",
+        "price": "120",
+        "price_old": "60",
+        "image": "https://i.imgur.com/4rcjF8Z.png",
+        "rating": {
+          "stars": 5,
+          "count": 89
+        },
+        "count_product": 120,
+        "wishlist": false,
+        "isNew": true,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_12",
+        "title": "Modern Headphones",
+        "category": "Women-Fashion",
+        "price": "180",
+        "price_old": "90",
+        "image": "https://i.imgur.com/nWu0Icd.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "count_product": 111,
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_13",
+        "title": "Modern Purse Bag",
+        "category": "Women-Fashion",
+        "price": "210",
+        "price_old": "105",
+        "image": "https://i.imgur.com/qpG342Z.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "count_product": 120,
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_17",
+        "title": "Mid Century Modern Shirt",
+        "category": "Women-Cloths",
+        "category_id": "women",
+        "price": "110",
+        "image": "https://i.imgur.com/poKWD8k.png",
+        "rating": {
+          "stars": 5,
+          "count": 540
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_18",
+        "title": "Mid Century Modern Shirt",
+        "category": "Women-Cloths",
+        "category_id": "women",
+        "price": "110",
+        "image": "https://i.imgur.com/F9WeLDN.png",
+        "rating": {
+          "stars": 5,
+          "count": 540
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
       }
-   ],
-   "categories": [
+    ],
+    "popular": [
       {
-         "id": "1",
-         "category": "Men Fashion",
-         "image": "https://i.imgur.com/BHcMloN.png",
-         "slug": "men-fashion",
-         "to": "men"
+        "id": "product_1",
+        "title": "Mid Century Modern T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "110",
+        "image": "https://i.imgur.com/okAuCqZ.png",
+        "rating": {
+          "stars": 5,
+          "count": 18
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "2",
-         "category": "Women Fashion",
-         "image": "https://i.imgur.com/hDSbYRH.png",
-         "slug": "women-fashion",
-         "to": "women"
+        "id": "product_2",
+        "title": "Mid Century Modern T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "139",
+        "image": "https://i.imgur.com/Eu4v8Mw.png",
+        "rating": {
+          "stars": 5,
+          "count": 28
+        },
+        "wishlist": false,
+        "isNew": true,
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "3",
-         "category": "Kids Fashion",
-         "image": "https://i.imgur.com/T0vUMMF.png",
-         "slug": "kids-fashion",
-         "to": "Kids"
-      },
-      {
-         "id": "4",
-         "category": "Baby Fashion",
-         "image": "https://i.imgur.com/MveMYjm.png",
-         "slug": "baby-fashion",
-         "to": "baby"
-      },
-      {
-         "id": "5",
-         "category": "Mobile Device",
-         "image": "https://i.imgur.com/itJG1bS.png",
-         "slug": "mobile-device",
-         "to": "mobile"
-      },
-      {
-         "id": "6",
-         "category": "Computer Device",
-         "image": "https://i.imgur.com/vKshJqO.png",
-         "slug": "computer-device",
-         "to": "computer"
-      },
-      {
-         "id": "7",
-         "category": "Beauty Products",
-         "image": "https://i.imgur.com/DyJGHyM.png",
-         "slug": "beauty-products",
-         "to": "beauty"
-      },
-      {
-         "id": "8",
-         "category": "Furniture",
-         "image": "https://i.imgur.com/VP8pJgK.png",
-         "slug": "furniture",
-         "to": "furniture"
-      },
-      {
-         "id": "9",
-         "category": "Smart Watch",
-         "image": "https://i.imgur.com/N3GXRi4.png",
-         "slug": "smart-watch",
-         "to": "smart"
-      },
-      {
-         "id": "10",
-         "category": "Modern Shoes",
-         "image": "https://i.imgur.com/9jEMx16.png",
-         "slug": "modern-shoes",
-         "to": "modern"
-      },
-      {
-         "id": "11",
-         "category": "Beautiful Jewelry",
-         "image": "https://i.imgur.com/2w1mNbk.png",
-         "slug": "beautiful-jewelry",
-         "to": "beautiful"
-      },
-      {
-         "id": "12",
-         "category": "Home Products",
-         "image": "https://i.imgur.com/rVDEyng.png",
-         "slug": "home-products",
-         "to": "/"
+        "id": "product_3",
+        "title": "MCorporate Office Shoes",
+        "category": "Men-Shoes",
+        "category_id": "men",
+        "price": "59",
+        "image": "https://i.imgur.com/RAF6rik.png",
+        "rating": {
+          "stars": 5,
+          "count": 0
+        },
+        "wishlist": false,
+        "isNew": false,
+        "buttonText": "Add to Cart"
       }
-   ],
-   "products": {
-      "all": [
-         {
-            "id": "product_14",
-            "title": "Mid Century Modern Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$110",
-            "image": "https://i.imgur.com/oxMOl0z.png",
-            "rating": {
-               "stars": 5,
-               "count": 540
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_15",
-            "title": "Mid Century Modern T-Shirt",
-            "category": "Women-Cloths",
-            "category_id": "women",
-            "price": "$139",
-            "image": "https://i.imgur.com/is9V4Kv.png",
-            "rating": {
-               "stars": 5,
-               "count": 542
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_16",
-            "title": "Corporate Office Shoes",
-            "category": "Men-Shoes",
-            "category_id": "men",
-            "price": "$399",
-            "image": "https://i.imgur.com/QQFdcyp.png",
-            "rating": {
-               "stars": 5,
-               "count": 598
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_1",
-            "title": "Mid Century Modern T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$110",
-            "image": "https://i.imgur.com/okAuCqZ.png",
-            "rating": {
-               "stars": 5,
-               "count": 18
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_2",
-            "title": "Mid Century Modern T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$139",
-            "image": "https://i.imgur.com/Eu4v8Mw.png",
-            "rating": {
-               "stars": 5,
-               "count": 28
-            },
-            "wishlist": false,
-            "isNew": true,
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_3",
-            "title": "MCorporate Office Shoes",
-            "category": "Men-Shoes",
-            "category_id": "men",
-            "price": "$59",
-            "image": "https://i.imgur.com/RAF6rik.png",
-            "rating": {
-               "stars": 5,
-               "count": 0
-            },
-            "wishlist": false,
-            "isNew": false,
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_4",
-            "title": "Modern Black T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$199",
-            "image": "https://i.imgur.com/ZYivNhr.png",
-            "rating": {
-               "stars": 5,
-               "count": 132
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "New Product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_5",
-            "title": "Women Hand Bags",
-            "category": "Women-Fashion",
-            "price": "$139",
-            "image": "https://i.imgur.com/bZ6I3cF.png",
-            "rating": {
-               "stars": 5,
-               "count": 98
-            },
-            "wishlist": false,
-            "isNew": true,
-            "label": "New Product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_6",
-            "title": "Modern Stylish Shoes",
-            "category": "Men-Shoes",
-            "category_id": "men",
-            "price": "$153",
-            "image": "https://i.imgur.com/KMHxUCj.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "New Product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_7",
-            "title": "Modern Black T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$199",
-            "image": "https://i.imgur.com/LwC3Bs8.png",
-            "rating": {
-               "stars": 5,
-               "count": 132
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "Best product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_8",
-            "title": "Modern Stylish Shoes",
-            "category": "Women-Shoes",
-            "category_id": "women",
-            "price": "$139",
-            "image": "https://i.imgur.com/1nHlyJG.png",
-            "rating": {
-               "stars": 5,
-               "count": 89
-            },
-            "wishlist": false,
-            "isNew": true,
-            "label": "Best product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_9",
-            "title": "Women Hand Bags",
-            "category": "Women-Fashion",
-            "price": "$153",
-            "image": "https://i.imgur.com/JBHjCSj.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "Best product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_10",
-            "title": "Modern Sports Shoes",
-            "category": "Men-Shoes",
-            "category_id": "men",
-            "price": "$220",
-            "price_old": "$110",
-            "image": "https://i.imgur.com/GU1lahp.png",
-            "rating": {
-               "stars": 5,
-               "count": 0
-            },
-            "count_product": 0,
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_11",
-            "title": "Modern Green Sweater",
-            "category": "Women-Cloths",
-            "price": "$120",
-            "price_old": "$60",
-            "image": "https://i.imgur.com/4rcjF8Z.png",
-            "rating": {
-               "stars": 5,
-               "count": 89
-            },
-            "count_product": 120,
-            "wishlist": false,
-            "isNew": true,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_12",
-            "title": "Modern Headphones",
-            "category": "Women-Fashion",
-            "price": "$180",
-            "price_old": "$90",
-            "image": "https://i.imgur.com/nWu0Icd.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "count_product": 111,
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_13",
-            "title": "Modern Purse Bag",
-            "category": "Women-Fashion",
-            "price": "$210",
-            "price_old": "$105",
-            "image": "https://i.imgur.com/qpG342Z.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "count_product": 120,
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_17",
-            "title": "Mid Century Modern Shirt",
-            "category": "Women-Cloths",
-            "category_id": "women",
-            "price": "$110",
-            "image": "https://i.imgur.com/poKWD8k.png",
-            "rating": {
-               "stars": 5,
-               "count": 540
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_18",
-            "title": "Mid Century Modern Shirt",
-            "category": "Women-Cloths",
-            "category_id": "women",
-            "price": "$110",
-            "image": "https://i.imgur.com/F9WeLDN.png",
-            "rating": {
-               "stars": 5,
-               "count": 540
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         }
-      ],
-      "popular": [
-         {
-            "id": "product_1",
-            "title": "Mid Century Modern T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$110",
-            "image": "https://i.imgur.com/okAuCqZ.png",
-            "rating": {
-               "stars": 5,
-               "count": 18
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_2",
-            "title": "Mid Century Modern T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$139",
-            "image": "https://i.imgur.com/Eu4v8Mw.png",
-            "rating": {
-               "stars": 5,
-               "count": 28
-            },
-            "wishlist": false,
-            "isNew": true,
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_3",
-            "title": "MCorporate Office Shoes",
-            "category": "Men-Shoes",
-            "category_id": "men",
-            "price": "$59",
-            "image": "https://i.imgur.com/RAF6rik.png",
-            "rating": {
-               "stars": 5,
-               "count": 0
-            },
-            "wishlist": false,
-            "isNew": false,
-            "buttonText": "Add to Cart"
-         }
-      ],
-      "new": [
-         {
-            "id": "product_4",
-            "title": "Modern Black T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$199",
-            "image": "https://i.imgur.com/ZYivNhr.png",
-            "rating": {
-               "stars": 5,
-               "count": 132
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "New Product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_5",
-            "title": "Women Hand Bags",
-            "category": "Women-Fashion",
-            "price": "$139",
-            "image": "https://i.imgur.com/bZ6I3cF.png",
-            "rating": {
-               "stars": 5,
-               "count": 98
-            },
-            "wishlist": false,
-            "isNew": true,
-            "label": "New Product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_6",
-            "title": "Modern Stylish Shoes",
-            "category": "Men-Shoes",
-            "category_id": "men",
-            "price": "$153",
-            "image": "https://i.imgur.com/KMHxUCj.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "New Product",
-            "buttonText": "Add to Cart"
-         }
-      ],
-      "best": [
-         {
-            "id": "product_7",
-            "title": "Modern Black T-Shirt",
-            "category": "Men-Cloths",
-            "category_id": "men",
-            "price": "$199",
-            "image": "https://i.imgur.com/LwC3Bs8.png",
-            "rating": {
-               "stars": 5,
-               "count": 132
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "Best product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_8",
-            "title": "Modern Stylish Shoes",
-            "category": "Women-Shoes",
-            "category_id": "women",
-            "price": "$139",
-            "image": "https://i.imgur.com/1nHlyJG.png",
-            "rating": {
-               "stars": 5,
-               "count": 89
-            },
-            "wishlist": false,
-            "isNew": true,
-            "label": "Best product",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_9",
-            "title": "Women Hand Bags",
-            "category": "Women-Fashion",
-            "price": "$153",
-            "image": "https://i.imgur.com/JBHjCSj.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "wishlist": false,
-            "isNew": false,
-            "label": "Best product",
-            "buttonText": "Add to Cart"
-         }
-      ],
-      "sale": [
-         {
-            "id": "product_10",
-            "title": "Modern Sports Shoes",
-            "category": "Men-Shoes",
-            "category_id": "men",
-            "price": "$220",
-            "price_old": "$110",
-            "image": "https://i.imgur.com/GU1lahp.png",
-            "rating": {
-               "stars": 5,
-               "count": 0
-            },
-            "count_product": 0,
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_11",
-            "title": "Modern Green Sweater",
-            "category": "Women-Cloths",
-            "price": "$120",
-            "price_old": "$60",
-            "image": "https://i.imgur.com/4rcjF8Z.png",
-            "rating": {
-               "stars": 5,
-               "count": 89
-            },
-            "count_product": 120,
-            "wishlist": false,
-            "isNew": true,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_12",
-            "title": "Modern Headphones",
-            "category": "Women-Fashion",
-            "price": "$180",
-            "price_old": "$90",
-            "image": "https://i.imgur.com/nWu0Icd.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "count_product": 111,
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         },
-         {
-            "id": "product_13",
-            "title": "Modern Purse Bag",
-            "category": "Women-Fashion",
-            "price": "$210",
-            "price_old": "$105",
-            "image": "https://i.imgur.com/qpG342Z.png",
-            "rating": {
-               "stars": 5,
-               "count": 39
-            },
-            "count_product": 120,
-            "wishlist": false,
-            "isNew": false,
-            "label": "",
-            "buttonText": "Add to Cart"
-         }
-      ]
-   },
-   "brands": [
+    ],
+    "new": [
       {
-         "brand_id": "brand_1",
-         "brand_name": "Dell Brand",
-         "brand_img": "https://i.imgur.com/HnvlUXb.png"
+        "id": "product_4",
+        "title": "Modern Black T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "199",
+        "image": "https://i.imgur.com/ZYivNhr.png",
+        "rating": {
+          "stars": 5,
+          "count": 132
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "New Product",
+        "buttonText": "Add to Cart"
       },
       {
-         "brand_id": "brand_2",
-         "brand_name": "HP Brand",
-         "brand_img": "https://i.imgur.com/ryTidgq.png"
+        "id": "product_5",
+        "title": "Women Hand Bags",
+        "category": "Women-Fashion",
+        "price": "139",
+        "image": "https://i.imgur.com/bZ6I3cF.png",
+        "rating": {
+          "stars": 5,
+          "count": 98
+        },
+        "wishlist": false,
+        "isNew": true,
+        "label": "New Product",
+        "buttonText": "Add to Cart"
       },
       {
-         "brand_id": "brand_3",
-         "brand_name": "Nike Brand",
-         "brand_img": "https://i.imgur.com/lkAeS4v.png"
-      },
-      {
-         "brand_id": "brand_4",
-         "brand_name": "Louis Vuitton",
-         "brand_img": "https://i.imgur.com/aQohj1g.png"
+        "id": "product_6",
+        "title": "Modern Stylish Shoes",
+        "category": "Men-Shoes",
+        "category_id": "men",
+        "price": "153",
+        "image": "https://i.imgur.com/KMHxUCj.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "New Product",
+        "buttonText": "Add to Cart"
       }
-   ],
-   "blogs": [
+    ],
+    "best": [
       {
-         "id": "blog_1",
-         "title": "How to start an online store",
-         "description": "A comprehensive guide to setting up your own online store.",
-         "image": "https://i.imgur.com/jswQ1oh.png",
-         "link": "read-the-blog-how-to-start-an-online-store",
-         "createdAt": "2025-05-04T10:00:00Z"
+        "id": "product_7",
+        "title": "Modern Black T-Shirt",
+        "category": "Men-Cloths",
+        "category_id": "men",
+        "price": "199",
+        "image": "https://i.imgur.com/LwC3Bs8.png",
+        "rating": {
+          "stars": 5,
+          "count": 132
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "Best product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "blog_2",
-         "title": "7 examples of the best eCommerce websites to take notes from",
-         "description": "Explore top eCommerce websites and learn from their designs.",
-         "image": "https://i.imgur.com/5W9tZkl.png",
-         "link": "read-the-blog-7-examples-of-the-best-ecommerce-websites-to-take-notes-from",
-         "createdAt": "2025-05-04T11:30:00Z"
+        "id": "product_8",
+        "title": "Modern Stylish Shoes",
+        "category": "Women-Shoes",
+        "category_id": "women",
+        "price": "139",
+        "image": "https://i.imgur.com/1nHlyJG.png",
+        "rating": {
+          "stars": 5,
+          "count": 89
+        },
+        "wishlist": false,
+        "isNew": true,
+        "label": "Best product",
+        "buttonText": "Add to Cart"
       },
       {
-         "id": "blog_3",
-         "title": "How to start a t-shirt business: ultimate step-by-step guide",
-         "description": "Everything you need to launch a successful t-shirt business online.",
-         "image": "https://i.imgur.com/9am4vkp.png",
-         "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
-         "createdAt": "2025-05-04T13:15:00Z"
-      },
-      {
-         "id": "blog_4",
-         "title": "30 type of modern trendy fashion for women and men in 2022 worlwide",
-         "description": "Everything you need to launch a successful t-shirt business online.",
-         "image": "https://i.imgur.com/aDocEQ7.png",
-         "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
-         "createdAt": "2025-05-04T13:15:00Z"
-      },
-      {
-         "id": "blog_5",
-         "title": "Win a Samsung Portable SSD T7 Shield",
-         "description": "Everything you need to launch a successful t-shirt business online.",
-         "image": "https://i.imgur.com/L5iTHGS.png",
-         "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
-         "createdAt": "2025-05-04T13:15:00Z"
-      },
-      {
-         "id": "blog_6",
-         "title": "How to start a t-shirt business: ultimate step-by-step guide",
-         "description": "Everything you need to launch a successful t-shirt business online.",
-         "image": "https://i.imgur.com/9am4vkp.png",
-         "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
-         "createdAt": "2025-05-04T13:15:00Z"
-      },
-      {
-         "id": "blog_7",
-         "title": "How to start a t-shirt business: ultimate step-by-step guide",
-         "description": "Everything you need to launch a successful t-shirt business online.",
-         "image": "https://i.imgur.com/9am4vkp.png",
-         "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
-         "createdAt": "2025-05-04T13:15:00Z"
-      },
-      {
-         "id": "blog_8",
-         "title": "How to start a t-shirt business: ultimate step-by-step guide",
-         "description": "Everything you need to launch a successful t-shirt business online.",
-         "image": "https://i.imgur.com/9am4vkp.png",
-         "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
-         "createdAt": "2025-05-04T13:15:00Z"
-      },
-      {
-         "id": "blog_9",
-         "title": "How to start a t-shirt business: ultimate step-by-step guide",
-         "description": "Everything you need to launch a successful t-shirt business online.",
-         "image": "https://i.imgur.com/9am4vkp.png",
-         "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
-         "createdAt": "2025-05-04T13:15:00Z"
-      },
-      {
-         "id": "blog_10",
-         "title": "30 type of modern trendy fashion for women and men in 2022 worlwide",
-         "description": "A comprehensive guide to setting up your own online store.",
-         "image": "https://i.imgur.com/thQuTxX.png",
-         "link": "read-the-blog-how-to-start-an-online-store",
-         "createdAt": "2025-05-04T10:00:00Z"
-      },
-      {
-         "id": "blog_11",
-         "title": "Open-sourcing our photo layout for Swift UI",
-         "description": "A comprehensive guide to setting up your own online store.",
-         "image": "https://i.imgur.com/fzC1Uzf.png",
-         "link": "read-the-blog-how-to-start-an-online-store",
-         "createdAt": "2025-05-04T10:00:00Z"
-      },
-      {
-         "id": "blog_12",
-         "title": "Win a Samsung Portable SSD T7 Shield",
-         "description": "A comprehensive guide to setting up your own online store.",
-         "image": " https://i.imgur.com/1UPHxw2.png",
-         "link": "read-the-blog-how-to-start-an-online-store",
-         "createdAt": "2025-05-04T10:00:00Z"
+        "id": "product_9",
+        "title": "Women Hand Bags",
+        "category": "Women-Fashion",
+        "price": "153",
+        "image": "https://i.imgur.com/JBHjCSj.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "wishlist": false,
+        "isNew": false,
+        "label": "Best product",
+        "buttonText": "Add to Cart"
       }
-   ]
+    ],
+    "sale": [
+      {
+        "id": "product_10",
+        "title": "Modern Sports Shoes",
+        "category": "Men-Shoes",
+        "category_id": "men",
+        "price": "220",
+        "price_old": "110",
+        "image": "https://i.imgur.com/GU1lahp.png",
+        "rating": {
+          "stars": 5,
+          "count": 0
+        },
+        "count_product": 0,
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_11",
+        "title": "Modern Green Sweater",
+        "category": "Women-Cloths",
+        "price": "120",
+        "price_old": "60",
+        "image": "https://i.imgur.com/4rcjF8Z.png",
+        "rating": {
+          "stars": 5,
+          "count": 89
+        },
+        "count_product": 120,
+        "wishlist": false,
+        "isNew": true,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_12",
+        "title": "Modern Headphones",
+        "category": "Women-Fashion",
+        "price": "180",
+        "price_old": "90",
+        "image": "https://i.imgur.com/nWu0Icd.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "count_product": 111,
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
+      },
+      {
+        "id": "product_13",
+        "title": "Modern Purse Bag",
+        "category": "Women-Fashion",
+        "price": "210",
+        "price_old": "105",
+        "image": "https://i.imgur.com/qpG342Z.png",
+        "rating": {
+          "stars": 5,
+          "count": 39
+        },
+        "count_product": 120,
+        "wishlist": false,
+        "isNew": false,
+        "label": "",
+        "buttonText": "Add to Cart"
+      }
+    ]
+  },
+  "brands": [
+    {
+      "brand_id": "brand_1",
+      "brand_name": "Dell Brand",
+      "brand_img": "https://i.imgur.com/HnvlUXb.png",
+      "id": "5372"
+    },
+    {
+      "brand_id": "brand_2",
+      "brand_name": "HP Brand",
+      "brand_img": "https://i.imgur.com/ryTidgq.png",
+      "id": "b8ca"
+    },
+    {
+      "brand_id": "brand_3",
+      "brand_name": "Nike Brand",
+      "brand_img": "https://i.imgur.com/lkAeS4v.png",
+      "id": "5e19"
+    },
+    {
+      "brand_id": "brand_4",
+      "brand_name": "Louis Vuitton",
+      "brand_img": "https://i.imgur.com/aQohj1g.png",
+      "id": "294d"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "blog_1",
+      "title": "How to start an online store",
+      "description": "A comprehensive guide to setting up your own online store.",
+      "image": "https://i.imgur.com/jswQ1oh.png",
+      "link": "read-the-blog-how-to-start-an-online-store",
+      "createdAt": "2025-05-04T10:00:00Z"
+    },
+    {
+      "id": "blog_2",
+      "title": "7 examples of the best eCommerce websites to take notes from",
+      "description": "Explore top eCommerce websites and learn from their designs.",
+      "image": "https://i.imgur.com/5W9tZkl.png",
+      "link": "read-the-blog-7-examples-of-the-best-ecommerce-websites-to-take-notes-from",
+      "createdAt": "2025-05-04T11:30:00Z"
+    },
+    {
+      "id": "blog_3",
+      "title": "How to start a t-shirt business: ultimate step-by-step guide",
+      "description": "Everything you need to launch a successful t-shirt business online.",
+      "image": "https://i.imgur.com/9am4vkp.png",
+      "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
+      "createdAt": "2025-05-04T13:15:00Z"
+    },
+    {
+      "id": "blog_4",
+      "title": "30 type of modern trendy fashion for women and men in 2022 worlwide",
+      "description": "Everything you need to launch a successful t-shirt business online.",
+      "image": "https://i.imgur.com/aDocEQ7.png",
+      "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
+      "createdAt": "2025-05-04T13:15:00Z"
+    },
+    {
+      "id": "blog_5",
+      "title": "Win a Samsung Portable SSD T7 Shield",
+      "description": "Everything you need to launch a successful t-shirt business online.",
+      "image": "https://i.imgur.com/L5iTHGS.png",
+      "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
+      "createdAt": "2025-05-04T13:15:00Z"
+    },
+    {
+      "id": "blog_6",
+      "title": "How to start a t-shirt business: ultimate step-by-step guide",
+      "description": "Everything you need to launch a successful t-shirt business online.",
+      "image": "https://i.imgur.com/9am4vkp.png",
+      "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
+      "createdAt": "2025-05-04T13:15:00Z"
+    },
+    {
+      "id": "blog_7",
+      "title": "How to start a t-shirt business: ultimate step-by-step guide",
+      "description": "Everything you need to launch a successful t-shirt business online.",
+      "image": "https://i.imgur.com/9am4vkp.png",
+      "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
+      "createdAt": "2025-05-04T13:15:00Z"
+    },
+    {
+      "id": "blog_8",
+      "title": "How to start a t-shirt business: ultimate step-by-step guide",
+      "description": "Everything you need to launch a successful t-shirt business online.",
+      "image": "https://i.imgur.com/9am4vkp.png",
+      "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
+      "createdAt": "2025-05-04T13:15:00Z"
+    },
+    {
+      "id": "blog_9",
+      "title": "How to start a t-shirt business: ultimate step-by-step guide",
+      "description": "Everything you need to launch a successful t-shirt business online.",
+      "image": "https://i.imgur.com/9am4vkp.png",
+      "link": "read-the-blog-how-to-start-a-t-shirt-business-ultimate-step-by-step-guide",
+      "createdAt": "2025-05-04T13:15:00Z"
+    },
+    {
+      "id": "blog_10",
+      "title": "30 type of modern trendy fashion for women and men in 2022 worlwide",
+      "description": "A comprehensive guide to setting up your own online store.",
+      "image": "https://i.imgur.com/thQuTxX.png",
+      "link": "read-the-blog-how-to-start-an-online-store",
+      "createdAt": "2025-05-04T10:00:00Z"
+    },
+    {
+      "id": "blog_11",
+      "title": "Open-sourcing our photo layout for Swift UI",
+      "description": "A comprehensive guide to setting up your own online store.",
+      "image": "https://i.imgur.com/fzC1Uzf.png",
+      "link": "read-the-blog-how-to-start-an-online-store",
+      "createdAt": "2025-05-04T10:00:00Z"
+    },
+    {
+      "id": "blog_12",
+      "title": "Win a Samsung Portable SSD T7 Shield",
+      "description": "A comprehensive guide to setting up your own online store.",
+      "image": " https://i.imgur.com/1UPHxw2.png",
+      "link": "read-the-blog-how-to-start-an-online-store",
+      "createdAt": "2025-05-04T10:00:00Z"
+    }
+  ]
 }

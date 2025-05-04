@@ -5,20 +5,22 @@ import heart from "@assets/icons/heart.svg";
 import shop from "@assets/icons/Shop.svg";
 import { useMemo } from "react";
 const cx = classNames.bind(styles);
-const Action = ({ wishlist }) => {
+const Action = ({ wishlist, cartsProducts }) => {
    const countWithList = Object.values(wishlist).filter(Boolean).length;
+   const countCart = cartsProducts.length;
+   console.log(cartsProducts);
    const itemIcons = useMemo(
       () => [
          { src: user },
          { src: heart, countCart: countWithList },
-         { src: shop, countCart: 0 },
+         { src: shop, countCart: countCart },
       ],
-      [countWithList]
+      [countWithList, countCart]
    );
    return (
       <div className={cx("action")}>
          {itemIcons.map(({ src, countCart }) => (
-            <button key={src}>
+            <button key={src} className={cx("action-love")}>
                <img src={src} alt="user" className={cx('"action-icon"')} />
                <span>{countCart}</span>
             </button>
