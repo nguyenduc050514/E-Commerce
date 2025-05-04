@@ -39,6 +39,11 @@ const deleteWishList = (id) => {
    return instance2.delete(URL_BACKEND);
 };
 
+const getAllBrandsProducts = () => {
+   const URL_BACKEND = "/brands";
+   return instance2.get(URL_BACKEND);
+};
+
 export {
    getSection,
    getExploreCategories,
@@ -47,4 +52,5 @@ export {
    getWishList,
    addWishList,
    deleteWishList,
+   getAllBrandsProducts,
 };

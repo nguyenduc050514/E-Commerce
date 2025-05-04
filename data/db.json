@@ -13,14 +13,6 @@
       "addedAt": "2025-05-03T15:09:03.383Z"
     },
     {
-      "id": "product_8",
-      "addedAt": "2025-05-03T15:09:05.653Z"
-    },
-    {
-      "id": "product_12",
-      "addedAt": "2025-05-03T15:09:07.580Z"
-    },
-    {
       "id": "product_3",
       "addedAt": "2025-05-03T15:16:46.853Z"
     },
@@ -29,98 +21,110 @@
       "addedAt": "2025-05-03T15:16:51.078Z"
     },
     {
-      "id": "product_11",
-      "addedAt": "2025-05-03T15:24:39.937Z"
-    },
-    {
       "id": "product_17",
       "addedAt": "2025-05-03T15:24:41.965Z"
     },
     {
       "id": "product_18",
       "addedAt": "2025-05-03T15:32:13.015Z"
+    },
+    {
+      "id": "product_16",
+      "addedAt": "2025-05-03T16:12:51.073Z"
+    },
+    {
+      "id": "product_14",
+      "addedAt": "2025-05-03T16:12:52.232Z"
+    },
+    {
+      "id": "product_15",
+      "addedAt": "2025-05-03T16:13:12.856Z"
+    },
+    {
+      "id": "product_6",
+      "addedAt": "2025-05-04T07:03:57.096Z"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "category": "Men Fashion",
       "image": "https://i.imgur.com/BHcMloN.png",
       "slug": "men-fashion",
       "to": "men"
     },
     {
-      "id": 2,
+      "id": "2",
       "category": "Women Fashion",
       "image": "https://i.imgur.com/hDSbYRH.png",
       "slug": "women-fashion",
       "to": "women"
     },
     {
-      "id": 3,
+      "id": "3",
       "category": "Kids Fashion",
       "image": "https://i.imgur.com/T0vUMMF.png",
       "slug": "kids-fashion",
       "to": "Kids"
     },
     {
-      "id": 4,
+      "id": "4",
       "category": "Baby Fashion",
       "image": "https://i.imgur.com/MveMYjm.png",
       "slug": "baby-fashion",
       "to": "baby"
     },
     {
-      "id": 5,
+      "id": "5",
       "category": "Mobile Device",
       "image": "https://i.imgur.com/itJG1bS.png",
       "slug": "mobile-device",
       "to": "mobile"
     },
     {
-      "id": 6,
+      "id": "6",
       "category": "Computer Device",
       "image": "https://i.imgur.com/vKshJqO.png",
       "slug": "computer-device",
       "to": "computer"
     },
     {
-      "id": 7,
+      "id": "7",
       "category": "Beauty Products",
       "image": "https://i.imgur.com/DyJGHyM.png",
       "slug": "beauty-products",
       "to": "beauty"
     },
     {
-      "id": 8,
+      "id": "8",
       "category": "Furniture",
       "image": "https://i.imgur.com/VP8pJgK.png",
       "slug": "furniture",
       "to": "furniture"
     },
     {
-      "id": 9,
+      "id": "9",
       "category": "Smart Watch",
       "image": "https://i.imgur.com/N3GXRi4.png",
       "slug": "smart-watch",
       "to": "smart"
     },
     {
-      "id": 10,
+      "id": "10",
       "category": "Modern Shoes",
       "image": "https://i.imgur.com/9jEMx16.png",
       "slug": "modern-shoes",
       "to": "modern"
     },
     {
-      "id": 11,
+      "id": "11",
       "category": "Beautiful Jewelry",
       "image": "https://i.imgur.com/2w1mNbk.png",
       "slug": "beautiful-jewelry",
       "to": "beautiful"
     },
     {
-      "id": 12,
+      "id": "12",
       "category": "Home Products",
       "image": "https://i.imgur.com/rVDEyng.png",
       "slug": "home-products",
@@ -636,5 +640,23 @@
         "buttonText": "Add to Cart"
       }
     ]
-  }
+  },
+  "brands": [
+    {
+      "brand_name": "Dell Brand",
+      "brand_img": "https://i.imgur.com/HnvlUXb.png"
+    },
+    {
+      "brand_name": "HP Brand",
+      "brand_img": "https://i.imgur.com/ryTidgq.png"
+    },
+    {
+      "brand_name": "Nike Brand",
+      "brand_img": "https://i.imgur.com/lkAeS4v.png"
+    },
+    {
+      "brand_name": "Louis Vuitton",
+      "brand_img": "https://i.imgur.com/aQohj1g.png"
+    }
+  ]
 }

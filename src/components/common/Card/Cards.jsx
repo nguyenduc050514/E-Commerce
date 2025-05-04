@@ -53,6 +53,7 @@ const CartsProducts = ({ productsPopular }) => {
                                  ? "Đã thêm vào danh sách yêu thích"
                                  : "Thêm vào danh sách yêu thích"
                            }
+                           title="Love"
                            onClick={() => handleWishlistToggle(id)}
                            style={{
                               filter: wishlist[id]

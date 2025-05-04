@@ -1,0 +1,57 @@
+@import "@assets/scss/main.scss";
+.brands {
+   margin-top: 110px;
+   padding-top: 40px;
+
+   &-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 70px;
+      gap: 30px;
+   }
+
+   &-heading {
+      font-weight: 700;
+      font-size: 4.2rem;
+      line-height: 1.2;
+      color: $primary-text-color;
+      max-width: 470px;
+   }
+
+   &-image__rapper {
+      background: #f1deb4;
+      @include flexItemCenter();
+      justify-content: center;
+      min-height: 210px;
+
+      &:hover {
+         outline: 1px solid #005d63;
+         outline-offset: 10px;
+         cursor: pointer;
+      }
+   }
+
+   &-image {
+      max-width: 150px;
+      height: 150px;
+   }
+
+   &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+
+   &-name {
+      font-family: "Manrope";
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.67;
+      text-align: center;
+      margin-top: 18px;
+   }
+}
+
+.container {
+   @extend %containerMaxWidth;
+}

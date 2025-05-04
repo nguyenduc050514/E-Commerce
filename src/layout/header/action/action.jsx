@@ -9,7 +9,7 @@ const Action = ({ wishlist }) => {
    const countWithList = Object.values(wishlist).filter(Boolean).length;
    const itemIcons = useMemo(
       () => [
-         { src: user, countCart: 0 },
+         { src: user },
          { src: heart, countCart: countWithList },
          { src: shop, countCart: 0 },
       ],
