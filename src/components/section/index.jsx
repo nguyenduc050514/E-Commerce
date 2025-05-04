@@ -31,7 +31,6 @@ const Section = () => {
    const goToSlide = (index) => {
       setCurrentSlide(index);
    };
-   // Auto slide effect
    // useEffect(() => {
    //    const timer = setInterval(() => {
    //       nextSlide();

@@ -44,6 +44,11 @@ const getAllBrandsProducts = () => {
    return instance2.get(URL_BACKEND);
 };
 
+const getAllBlogsList = () => {
+   const URL_BACKEND = "/blogs";
+   return instance2.get(URL_BACKEND);
+};
+
 export {
    getSection,
    getExploreCategories,
@@ -53,4 +58,5 @@ export {
    addWishList,
    deleteWishList,
    getAllBrandsProducts,
+   getAllBlogsList,
 };

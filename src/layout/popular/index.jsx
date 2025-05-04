@@ -25,6 +25,7 @@ const Popular = () => {
             <ProductsComponent
                heading="Our popular products"
                desc="Browse our most popular products and make your day more beautiful and glorious."
+               more="Browse All"
             />
             <div className={cx("popular__wrapper")}>
                <CartsProducts productsPopular={productsPopular} />

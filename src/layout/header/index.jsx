@@ -13,15 +13,13 @@ const Header = () => {
    useEffect(() => {
       const handleScroll = () => {
          if (window.scrollY > 50) {
-            // Trigger after scrolling 50px
             setIsScrolled(true);
          } else {
             setIsScrolled(false);
          }
       };
-
       window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll); // Cleanup
+      return () => window.removeEventListener("scroll", handleScroll);
    }, []);
 
    return (

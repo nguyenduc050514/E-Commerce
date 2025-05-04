@@ -17,7 +17,6 @@ const Slider = (props) => {
          >
             <FontAwesomeIcon icon={faChevronLeft} />
          </button>
-
          <div className={cx("slider-dots")}>
             {dataHero.map((_, index) => (
                <button
@@ -30,7 +29,6 @@ const Slider = (props) => {
                />
             ))}
          </div>
-
          <button
             className={cx("slider-arrow")}
             onClick={nextSlide}

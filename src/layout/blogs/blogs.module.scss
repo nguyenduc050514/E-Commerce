@@ -1,0 +1,142 @@
+@import "@assets/scss/main.scss";
+
+.blogs {
+   padding-top: 40px;
+   margin-top: 110px;
+   overflow: hidden;
+
+   &-list {
+      width: 100%;
+      margin-top: 70px;
+   }
+
+   .slider-wrapper {
+      overflow: hidden;
+   }
+
+   .slide-track {
+      display: flex;
+      width: 100%;
+   }
+
+   .blogs-item {
+      flex: 0 0 calc(100% / 3); /* 3 items per slide */
+      box-sizing: border-box;
+      padding: 0 10px;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+   }
+
+   &-image {
+      width: 100%;
+      max-width: 370px;
+      height: 227px;
+      margin: 0 auto;
+   }
+
+   &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+   }
+
+   &-link {
+      display: inline-block;
+      position: relative;
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: $primary-text-color;
+      border-bottom: 2px solid #131717;
+      transition: color 0.3s ease, border-color 0.3s ease;
+      text-decoration: none;
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         right: -12px;
+         width: 8px;
+         height: 8px;
+         border: 1.5px solid #131717;
+         border-top: none;
+         border-left: none;
+         transform: translateY(-50%) rotate(310deg);
+         transition: border-color 0.3s ease;
+      }
+
+      &:hover {
+         color: #2979ff;
+         border-color: #2979ff;
+
+         &::after {
+            border-color: #2979ff;
+         }
+      }
+   }
+
+   &-desc {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      margin-top: 15px;
+      color: $primary-text-color;
+      color: #566363;
+   }
+
+   .dots {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      .dot {
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+         background-color: #ccc;
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+
+         &.active {
+            background-color: #2979ff;
+         }
+      }
+   }
+
+   .container {
+      @extend %containerMaxWidth;
+   }
+
+   /* Responsive Design */
+   @media (max-width: 768px) {
+      .blogs-item {
+         flex: 0 0 100%; /* 1 item per slide on mobile */
+      }
+
+      .slide-track {
+         width: 100%;
+      }
+
+      &-image {
+         height: 200px;
+      }
+
+      &-desc {
+         font-size: 1.4rem;
+      }
+
+      &-link {
+         font-size: 1.4rem;
+      }
+   }
+
+   @media (max-width: 480px) {
+      padding-top: 20px;
+      margin-top: 80px;
+
+      &-image {
+         height: 180px;
+      }
+   }
+}

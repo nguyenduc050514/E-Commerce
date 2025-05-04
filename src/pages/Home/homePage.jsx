@@ -6,6 +6,8 @@ import BestProducts from "@layout/bestpopular";
 import LimitedOfferAlert from "@layout/LimitedOfferAlert";
 import ProductSkeletonLoader from "@components/common/skeletonProducts/SkeletonProducts";
 import Brands from "@layout/brands";
+import ServiceHighlight from "@layout/ServiceHighlight";
+import Blogs from "@layout/blogs";
 const HomePage = () => {
    return (
       <>
@@ -17,6 +19,8 @@ const HomePage = () => {
          <LimitedOfferAlert />
          <ProductSkeletonLoader />
          <Brands />
+         <ServiceHighlight />
+         <Blogs />
       </>
    );
 };
