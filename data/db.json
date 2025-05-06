@@ -43,65 +43,13 @@
     {
       "id": "product_13",
       "addedAt": "2025-05-04T16:28:04.194Z"
+    },
+    {
+      "id": "product_1",
+      "addedAt": "2025-05-06T17:24:46.703Z"
     }
   ],
   "carts": [
-    {
-      "id": "product_11",
-      "category": "Women-Cloths",
-      "image": "https://i.imgur.com/4rcjF8Z.png",
-      "price": "120",
-      "rating": {
-        "stars": 5,
-        "count": 89
-      },
-      "title": "Modern Green Sweater",
-      "label": "",
-      "price_old": "60",
-      "quantity": 4
-    },
-    {
-      "id": "product_10",
-      "category": "Men-Shoes",
-      "image": "https://i.imgur.com/GU1lahp.png",
-      "price": "220",
-      "rating": {
-        "stars": 5,
-        "count": 0
-      },
-      "title": "Modern Sports Shoes",
-      "label": "",
-      "price_old": "110",
-      "quantity": 3
-    },
-    {
-      "id": "product_13",
-      "category": "Women-Fashion",
-      "image": "https://i.imgur.com/qpG342Z.png",
-      "price": "210",
-      "rating": {
-        "stars": 5,
-        "count": 39
-      },
-      "title": "Modern Purse Bag",
-      "label": "",
-      "price_old": "105",
-      "quantity": 4
-    },
-    {
-      "id": "product_9",
-      "category": "Women-Fashion",
-      "image": "https://i.imgur.com/JBHjCSj.png",
-      "price": "153",
-      "rating": {
-        "stars": 5,
-        "count": 39
-      },
-      "title": "Women Hand Bags",
-      "label": "Best product",
-      "price_old": null,
-      "quantity": 1
-    },
     {
       "id": "product_2",
       "category": "Men-Cloths",
@@ -112,6 +60,19 @@
         "count": 28
       },
       "title": "Mid Century Modern T-Shirt",
+      "price_old": null,
+      "quantity": 1
+    },
+    {
+      "id": "product_3",
+      "category": "Men-Shoes",
+      "image": "https://i.imgur.com/RAF6rik.png",
+      "price": "59",
+      "rating": {
+        "stars": 5,
+        "count": 0
+      },
+      "title": "MCorporate Office Shoes",
       "price_old": null,
       "quantity": 1
     },
@@ -128,20 +89,6 @@
       "label": "",
       "price_old": null,
       "quantity": 1
-    },
-    {
-      "id": "product_12",
-      "category": "Women-Fashion",
-      "image": "https://i.imgur.com/nWu0Icd.png",
-      "price": "180",
-      "rating": {
-        "stars": 5,
-        "count": 39
-      },
-      "title": "Modern Headphones",
-      "label": "",
-      "price_old": "90",
-      "quantity": 7
     }
   ],
   "categories": [

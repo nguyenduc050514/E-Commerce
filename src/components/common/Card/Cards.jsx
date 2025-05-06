@@ -4,51 +4,23 @@ import heart from "@assets/icons/heart.svg";
 import filledHeart from "@assets/icons/fillHeart.svg";
 import start from "@assets/icons/start.svg";
 import OverView from "@components/common/overview";
-import HandleCard from "./handleCard";
-import { useState } from "react";
 import CartNotificationModal from "../cart/CartNotification";
+import useCartManager from "@components/common/Card/handleAddCart";
 const cx = classNames.bind(styles);
-
 const CartsProducts = ({ productsPopular }) => {
-   const { wishlist, showOverview, handleWishlistToggle, handleAddCart } =
-      HandleCard();
-   const [isShowNotification, setShowNotification] = useState(false);
-   const [addedProductId, setAddedProductId] = useState(null);
-   // Function to handle adding to cart and showing notification
-   const handleAddToCart = (
-      id,
-      category,
-      image,
-      price,
-      rating,
-      title,
-      label,
-      price_old = null
-   ) => {
-      // Call the original handleAddCart function
-      price_old
-         ? handleAddCart(
-              id,
-              category,
-              image,
-              price,
-              rating,
-              title,
-              label,
-              price_old
-           )
-         : handleAddCart(id, category, image, price, rating, title, label);
-
-      // Set the added product ID and show notification
-      setAddedProductId(id);
-      setShowNotification(true);
-   };
-
-   // Function to close the notification modal
-   const closeNotification = () => {
-      setShowNotification(false);
-   };
-
+   const {
+      isShowNotification,
+      wishlist,
+      showOverview,
+      handleWishlistToggle,
+      total,
+      productNotification,
+      handleAddToCart,
+      closeNotification,
+      setProductNotification,
+      setShowNotification,
+      cartsProducts,
+   } = useCartManager();
    return (
       <>
          {productsPopular.map(
@@ -131,7 +103,19 @@ const CartsProducts = ({ productsPopular }) => {
                      </div>
                      <button
                         className={cx("product__add-cart")}
-                        onClick={() =>
+                        onClick={() => {
+                           const productToNotify = {
+                              id,
+                              category,
+                              image,
+                              price,
+                              rating,
+                              title,
+                              label,
+                              price_old,
+                              quantity: 1,
+                           };
+                           setProductNotification(productToNotify);
                            handleAddToCart(
                               id,
                               category,
@@ -141,8 +125,10 @@ const CartsProducts = ({ productsPopular }) => {
                               title,
                               label,
                               price_old
-                           )
-                        }
+                           );
+                           // Không cần gọi handleClick nữa vì đã đặt productNotification
+                           setShowNotification(true);
+                        }}
                      >
                         {buttonText}
                      </button>
@@ -153,8 +139,11 @@ const CartsProducts = ({ productsPopular }) => {
          <CartNotificationModal
             isOpen={isShowNotification}
             onClose={closeNotification}
-            addedProductId={addedProductId}
             isTrue={false}
+            totalAmount={total}
+            productNotification={productNotification}
+            // handleProductModal={handleProductModal}
+            cartsProducts={cartsProducts}
          />
       </>
    );

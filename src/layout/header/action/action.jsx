@@ -8,7 +8,6 @@ const cx = classNames.bind(styles);
 const Action = ({ wishlist, cartsProducts }) => {
    const countWithList = Object.values(wishlist).filter(Boolean).length;
    const countCart = cartsProducts.length;
-   console.log(cartsProducts);
    const itemIcons = useMemo(
       () => [
          { src: user },

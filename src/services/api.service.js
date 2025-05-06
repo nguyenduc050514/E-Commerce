@@ -49,11 +49,6 @@ const getAllBlogsList = () => {
    return instance2.get(URL_BACKEND);
 };
 
-const getAllCart = () => {
-   const URL_BACKEND = "/carts";
-   return instance2.get(URL_BACKEND);
-};
-
 const addCartList = async (
    id,
    category,
@@ -97,6 +92,11 @@ const addCartList = async (
       console.error("Error in addCartList:", error);
       throw error;
    }
+};
+
+const getAllCart = () => {
+   const URL_BACKEND = "/carts";
+   return instance2.get(URL_BACKEND);
 };
 
 export {

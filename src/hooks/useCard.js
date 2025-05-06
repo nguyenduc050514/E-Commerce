@@ -149,8 +149,8 @@ const useCard = () => {
                price_old,
                newQuantity
             );
+            await fetchCartsList();
          } catch (error) {
-            // Rollback state in case of error
             setCartProducts((prev) => prev.filter((item) => item.id !== id));
             console.error("Error updating cart:", error);
          }
