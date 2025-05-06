@@ -54,7 +54,6 @@ const getAllCart = () => {
    return instance2.get(URL_BACKEND);
 };
 
-// Function to add/update cart items in the backend
 const addCartList = async (
    id,
    category,
@@ -67,27 +66,20 @@ const addCartList = async (
    quantity
 ) => {
    try {
-      // Check if item exists
-      const response = await instance2.get(`http://localhost:3001/carts`, {
+      const URL_BACKEND = "/carts";
+      const response = await instance2.get(URL_BACKEND, {
          params: { id: id },
       });
-
       const existingItems = response.data;
-
       if (existingItems.length > 0) {
-         // Item exists - update with PATCH request
          const existingItem = existingItems[0];
          const updatedItem = {
             ...existingItem,
             quantity: quantity,
          };
-
-         await instance2.patch(
-            `http://localhost:3001/carts/${existingItem.id}`,
-            updatedItem
-         );
+         const URL_BACKEND = `/carts/${existingItem.id}`;
+         await instance2.patch(URL_BACKEND, updatedItem);
       } else {
-         // Item doesn't exist - create with POST request
          const newCartItem = {
             id,
             category,
@@ -99,16 +91,14 @@ const addCartList = async (
             price_old,
             quantity,
          };
-
-         await instance2.post("http://localhost:3001/carts", newCartItem);
+         await instance2.post(URL_BACKEND, newCartItem);
       }
-
-      // Show success modal/notification (you already have this implemented)
    } catch (error) {
       console.error("Error in addCartList:", error);
       throw error;
    }
 };
+
 export {
    getSection,
    getExploreCategories,

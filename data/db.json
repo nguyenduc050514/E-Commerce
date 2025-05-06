@@ -58,7 +58,7 @@
       "title": "Modern Green Sweater",
       "label": "",
       "price_old": "60",
-      "quantity": 1
+      "quantity": 4
     },
     {
       "id": "product_10",
@@ -72,7 +72,7 @@
       "title": "Modern Sports Shoes",
       "label": "",
       "price_old": "110",
-      "quantity": 1
+      "quantity": 3
     },
     {
       "id": "product_13",
@@ -86,7 +86,7 @@
       "title": "Modern Purse Bag",
       "label": "",
       "price_old": "105",
-      "quantity": 1
+      "quantity": 4
     },
     {
       "id": "product_9",
@@ -128,6 +128,20 @@
       "label": "",
       "price_old": null,
       "quantity": 1
+    },
+    {
+      "id": "product_12",
+      "category": "Women-Fashion",
+      "image": "https://i.imgur.com/nWu0Icd.png",
+      "price": "180",
+      "rating": {
+        "stars": 5,
+        "count": 39
+      },
+      "title": "Modern Headphones",
+      "label": "",
+      "price_old": "90",
+      "quantity": 7
     }
   ],
   "categories": [

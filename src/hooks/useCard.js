@@ -7,13 +7,20 @@ import {
    getWishList,
 } from "@services/api.service";
 
+const debounce = (callback, wait) => {
+   let timer;
+   return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => callback(...args), wait);
+   };
+};
 const useCard = () => {
    const [showOverview, setShowOverview] = useState(null);
    const [wishlist, setWishlist] = useState({});
    const [cartsProducts, setCartProducts] = useState([]);
    const isMountedRef = useRef(true);
    const timeoutRef = useRef(null);
-
+   const debounceToggleRef = useRef(null);
    const fetchCartsList = async () => {
       try {
          const response = await getAllCart();
@@ -77,6 +84,7 @@ const useCard = () => {
             } else {
                await deleteWishList(id);
             }
+            await fetchWishlist();
          } catch (error) {
             console.error("Error updating wishlist:", error);
             if (isMountedRef.current) {
@@ -102,15 +110,12 @@ const useCard = () => {
       ) => {
          try {
             if (!id) return;
-
             const existingProduct = cartsProducts.find(
                (item) => item.id === id
             );
             const newQuantity = existingProduct
                ? existingProduct.quantity + 1
                : 1;
-
-            // Update state first for immediate UI feedback
             setCartProducts((prev) =>
                existingProduct
                   ? prev.map((item) =>
@@ -133,8 +138,6 @@ const useCard = () => {
                        },
                     ]
             );
-
-            // Call backend using Axios
             await addCartList(
                id,
                category,
@@ -154,10 +157,20 @@ const useCard = () => {
       },
       [cartsProducts]
    );
+   useEffect(() => {
+      const bouncedFunc = debounce(handleWishlistToggle, 300);
+      debounceToggleRef.current = bouncedFunc;
+      () => {
+         if (bouncedFunc.timer) clearTimeout(bouncedFunc.timer);
+      };
+   }, [handleWishlistToggle]);
+   const debouncedWishlistToggle = (id) => {
+      debounceToggleRef.current(id);
+   };
    return {
       wishlist,
       showOverview,
-      handleWishlistToggle,
+      handleWishlistToggle: debouncedWishlistToggle,
       cartsProducts,
       handleAddCart,
    };
