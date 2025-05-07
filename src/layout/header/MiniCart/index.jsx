@@ -25,7 +25,7 @@ const MiniCart = ({ cartsProducts }) => {
                      {title}
                   </h3>
                   <span className={cx("mini-cart__header__title-price")}>
-                     {price ? price : price_old} x{quantity}
+                     {price ? price : price_old}$ x{quantity}
                   </span>
                </div>
                <div className={cx("mini-cart__header__close")}>

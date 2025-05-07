@@ -6,7 +6,6 @@ import { Link } from "react-router";
 const cx = classNames.bind(styles);
 const ExploreWrapper = () => {
    const [categories, setCategories] = useState([]);
-
    const getCategories = async () => {
       try {
          const response = await getExploreCategories();
