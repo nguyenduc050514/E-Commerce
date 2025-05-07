@@ -107,7 +107,12 @@ const getCollectionProducts = () => {
 const getArrivalsProducts = () => {
    const URL_BACKEND = "/arrivals";
    return instance2.get(URL_BACKEND);
-}
+};
+
+const getSmartCategories = () => {
+   const URL_BACKEND = "/smartCategories";
+   return instance2.get(URL_BACKEND);
+};
 
 export {
    getSection,
@@ -122,5 +127,6 @@ export {
    getAllCart,
    addCartList,
    getCollectionProducts,
-   getArrivalsProducts
+   getArrivalsProducts,
+   getSmartCategories,
 };

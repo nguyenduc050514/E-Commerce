@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             element: <Brand />,
          },
          {
-            path: "/categories/:categoryId", // Dynamic route
+            path: "/categories/:categoryId",
             element: <Category />,
          },
          {

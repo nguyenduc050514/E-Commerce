@@ -1,0 +1,39 @@
+@import "@assets/scss/main.scss";
+.explore {
+   margin-top: 150px;
+   &-container {
+      @extend %containerMaxWidth;
+   }
+
+   &-header__heading {
+      font-weight: 700;
+      font-size: 4.2rem;
+      line-height: 1.1;
+      max-width: 470px;
+   }
+
+   &-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 70px;
+   }
+}
+
+.explore-item {
+   font-family: "Manrope";
+   cursor: pointer;
+   &__img {
+      max-width: 270px;
+      max-height: 210px;
+      object-fit: cover;
+      border-radius: 5px;
+   }
+
+   &__title {
+      margin-top: 18px;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.5;
+      text-align: center;
+   }
+}

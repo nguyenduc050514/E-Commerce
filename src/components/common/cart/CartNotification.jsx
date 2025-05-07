@@ -31,6 +31,7 @@ const CartNotificationModal = ({
                      <p className={cx("product-price")}>
                         {productNotification.price_old ||
                            productNotification.price}
+                        $
                      </p>
                   </div>
                </div>
@@ -55,7 +56,7 @@ const CartNotificationModal = ({
                      {totalAmount?.toLocaleString
                         ? totalAmount.toLocaleString()
                         : totalAmount}
-                     đ
+                     $
                   </span>
                </div>
                <button className={cx("checkout-button")}>

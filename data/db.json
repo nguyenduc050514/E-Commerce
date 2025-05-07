@@ -63,6 +63,10 @@
     {
       "id": "product_28",
       "addedAt": "2025-05-07T06:14:31.538Z"
+    },
+    {
+      "id": "product_20",
+      "addedAt": "2025-05-07T07:33:52.306Z"
     }
   ],
   "carts": [
@@ -78,7 +82,7 @@
       "title": "Modern Green Sweater",
       "label": "",
       "price_old": "60",
-      "quantity": 1
+      "quantity": 2
     },
     {
       "id": "product_4",
@@ -147,7 +151,7 @@
       "title": "Apple Watch Series 6",
       "label": "",
       "price_old": "",
-      "quantity": 2
+      "quantity": 3
     },
     {
       "id": "product_25",
@@ -189,7 +193,63 @@
       "title": "Laptop",
       "label": "",
       "price_old": "",
+      "quantity": 2
+    },
+    {
+      "id": "product_31",
+      "category": "New Product",
+      "image": "https://i.imgur.com/HongB0h.png",
+      "price": "150",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "title": "Apple Laptop",
+      "label": "",
+      "price_old": "",
       "quantity": 1
+    },
+    {
+      "id": "product_21",
+      "category": "Our Best Collection",
+      "image": "https://i.imgur.com/s8H1qTv.png",
+      "price": "550",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "title": "iPhone 14 Max Pro",
+      "label": "",
+      "price_old": "",
+      "quantity": 1
+    },
+    {
+      "id": "product_10",
+      "category": "Men-Shoes",
+      "image": "https://i.imgur.com/GU1lahp.png",
+      "price": "220",
+      "rating": {
+        "stars": 5,
+        "count": 0
+      },
+      "title": "Modern Sports Shoes",
+      "label": "",
+      "price_old": "110",
+      "quantity": 1
+    },
+    {
+      "id": "product_12",
+      "category": "Women-Fashion",
+      "image": "https://i.imgur.com/nWu0Icd.png",
+      "price": "180",
+      "rating": {
+        "stars": 5,
+        "count": 39
+      },
+      "title": "Modern Headphones",
+      "label": "",
+      "price_old": "90",
+      "quantity": 6
     }
   ],
   "categories": [
@@ -1118,6 +1178,48 @@
       "isNew": false,
       "label": "",
       "buttonText": "Add to Cart"
+    }
+  ],
+  "smartCategories": [
+    {
+      "id": "apple",
+      "title": "Apple Watch",
+      "image": "https://i.imgur.com/Xt18rc2.png"
+    },
+    {
+      "id": "i-phone",
+      "title": "i-phone",
+      "image": "https://i.imgur.com/p3GRT6l.png"
+    },
+    {
+      "id": "Alarm Clock",
+      "title": "Alarm Clock",
+      "image": "https://i.imgur.com/at1HV3K.png"
+    },
+    {
+      "id": "Smart Watch",
+      "title": "Smart Watch",
+      "image": "https://i.imgur.com/eCQqMnP.png"
+    },
+    {
+      "id": "Headphone",
+      "title": "Headphone",
+      "image": "https://i.imgur.com/u8C5IH4.png"
+    },
+    {
+      "id": "Ipot earphone",
+      "title": "Ipot earphone",
+      "image": "https://i.imgur.com/h2UuMwo.png"
+    },
+    {
+      "id": "Laptop",
+      "title": "Laptop",
+      "image": "https://i.imgur.com/aE0klhz.png"
+    },
+    {
+      "id": "Frize",
+      "title": "Frize",
+      "image": "https://i.imgur.com/cWgz4MZ.png"
     }
   ]
 }
