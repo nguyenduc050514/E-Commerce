@@ -1,0 +1,15 @@
+@import "@assets/scss/main.scss";
+.arrivals {
+   margin-top: 150px;
+
+   &-container {
+      @extend %containerMaxWidth;
+   }
+
+   &-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 70px;
+   }
+}

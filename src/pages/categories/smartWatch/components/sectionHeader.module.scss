@@ -1,0 +1,14 @@
+@import "@assets/scss/main.scss";
+.section {
+   &-header {
+      @include flexItemCenter();
+      justify-content: space-between;
+   }
+
+   &-header__heading {
+      font-weight: 700;
+      font-size: 5.8rem;
+      line-height: 1.1;
+      letter-spacing: 0%;
+   }
+}

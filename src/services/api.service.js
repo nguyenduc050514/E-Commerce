@@ -99,6 +99,16 @@ const getAllCart = () => {
    return instance2.get(URL_BACKEND);
 };
 
+const getCollectionProducts = () => {
+   const URL_BACKEND = "/collection-best";
+   return instance2.get(URL_BACKEND);
+};
+
+const getArrivalsProducts = () => {
+   const URL_BACKEND = "/arrivals";
+   return instance2.get(URL_BACKEND);
+}
+
 export {
    getSection,
    getExploreCategories,
@@ -111,4 +121,6 @@ export {
    getAllBlogsList,
    getAllCart,
    addCartList,
+   getCollectionProducts,
+   getArrivalsProducts
 };

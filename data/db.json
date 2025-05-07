@@ -51,6 +51,18 @@
     {
       "id": "product_2",
       "addedAt": "2025-05-06T18:48:51.870Z"
+    },
+    {
+      "id": "product_26",
+      "addedAt": "2025-05-07T06:14:24.897Z"
+    },
+    {
+      "id": "product_27",
+      "addedAt": "2025-05-07T06:14:28.440Z"
+    },
+    {
+      "id": "product_28",
+      "addedAt": "2025-05-07T06:14:31.538Z"
     }
   ],
   "carts": [
@@ -122,6 +134,62 @@
       "title": "MCorporate Office Shoes",
       "price_old": null,
       "quantity": 2
+    },
+    {
+      "id": "product_20",
+      "category": "",
+      "image": "https://i.imgur.com/fhm9i9J.png",
+      "price": "110",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "title": "Apple Watch Series 6",
+      "label": "",
+      "price_old": "",
+      "quantity": 2
+    },
+    {
+      "id": "product_25",
+      "category": "Our Best Collection",
+      "image": "https://i.imgur.com/OwWDh4l.png",
+      "price": "150",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "title": "Headphone",
+      "label": "",
+      "price_old": "",
+      "quantity": 1
+    },
+    {
+      "id": "product_24",
+      "category": "Our Best Collection",
+      "image": "https://i.imgur.com/YTtJY0v.png",
+      "price": "550",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "title": "Normal Watch",
+      "label": "",
+      "price_old": "",
+      "quantity": 1
+    },
+    {
+      "id": "product_27",
+      "category": "New Product",
+      "image": "https://i.imgur.com/btHtwl8.png",
+      "price": "550",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "title": "Laptop",
+      "label": "",
+      "price_old": "",
+      "quantity": 1
     }
   ],
   "categories": [
@@ -842,6 +910,214 @@
       "image": " https://i.imgur.com/1UPHxw2.png",
       "link": "read-the-blog-how-to-start-an-online-store",
       "createdAt": "2025-05-04T10:00:00Z"
+    }
+  ],
+  "collection-best": [
+    {
+      "id": "product_20",
+      "title": "Apple Watch Series 6",
+      "category": "Our Best Collection",
+      "price": "110",
+      "price_old": "",
+      "image": "https://i.imgur.com/fhm9i9J.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 20,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_21",
+      "title": "iPhone 14 Max Pro",
+      "category": "Our Best Collection",
+      "price": "550",
+      "price_old": "",
+      "image": "https://i.imgur.com/s8H1qTv.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 21,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_22",
+      "title": "Alarm Clock",
+      "category": "Our Best Collection",
+      "price": "150",
+      "price_old": "",
+      "image": "https://i.imgur.com/MP5jA0V.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 22,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_23",
+      "title": "Apple Watch Series 5",
+      "category": "Our Best Collection",
+      "price": "110",
+      "price_old": "",
+      "image": "https://i.imgur.com/qshWCS8.png",
+      "rating": {
+        "stars": 5,
+        "count": 14
+      },
+      "count_product": 20,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_24",
+      "title": "Normal Watch",
+      "category": "Our Best Collection",
+      "price": "550",
+      "price_old": "",
+      "image": "https://i.imgur.com/YTtJY0v.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 21,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_25",
+      "title": "Headphone",
+      "category": "Our Best Collection",
+      "price": "150",
+      "price_old": "",
+      "image": "https://i.imgur.com/OwWDh4l.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 22,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    }
+  ],
+  "arrivals": [
+    {
+      "id": "product_26",
+      "title": "Apple Watch Series 6",
+      "category": "New Product",
+      "price": "110",
+      "price_old": "",
+      "image": "https://i.imgur.com/uDuOQR2.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 20,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_27",
+      "title": "Laptop",
+      "category": "New Product",
+      "price": "550",
+      "price_old": "",
+      "image": "https://i.imgur.com/btHtwl8.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 21,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_28",
+      "title": "Smart Watch",
+      "category": "New Product",
+      "price": "150",
+      "price_old": "",
+      "image": "https://i.imgur.com/FXQHg4o.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 22,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_29",
+      "title": "Apple Watch Series 6",
+      "category": "New Product",
+      "price": "110",
+      "price_old": "",
+      "image": "https://i.imgur.com/9q4o1Oz.png",
+      "rating": {
+        "stars": 5,
+        "count": 14
+      },
+      "count_product": 20,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_30",
+      "title": "Smart Watch",
+      "category": "New Product",
+      "price": "550",
+      "price_old": "",
+      "image": "https://i.imgur.com/4uD4n9F.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 21,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
+    },
+    {
+      "id": "product_31",
+      "title": "Apple Laptop",
+      "category": "New Product",
+      "price": "150",
+      "price_old": "",
+      "image": "https://i.imgur.com/HongB0h.png",
+      "rating": {
+        "stars": 5,
+        "count": 18
+      },
+      "count_product": 22,
+      "wishlist": false,
+      "isNew": false,
+      "label": "",
+      "buttonText": "Add to Cart"
     }
   ]
 }

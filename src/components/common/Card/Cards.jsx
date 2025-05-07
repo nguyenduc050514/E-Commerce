@@ -37,11 +37,13 @@ const CartsProducts = ({ productsPopular }) => {
             }) => (
                <div key={id} className={cx("product__card")}>
                   <figure className={cx("product__image")}>
-                     <img
-                        src={image}
-                        alt={title}
-                        className={cx("product__img")}
-                     />
+                     {image && (
+                        <img
+                           src={image}
+                           alt={title}
+                           className={cx("product__img")}
+                        />
+                     )}
                      <div
                         className={`${cx("product__overview")} ${
                            wishlist[showOverview] && showOverview === id
@@ -58,7 +60,9 @@ const CartsProducts = ({ productsPopular }) => {
                   </figure>
                   <div>
                      <div className={cx("product__row")}>
-                        <p className={cx("product__title")}>{category}</p>
+                        {category && (
+                           <p className={cx("product__title")}>{category}</p>
+                        )}
                         <img
                            src={wishlist[id] ? filledHeart : heart}
                            alt={
@@ -76,7 +80,7 @@ const CartsProducts = ({ productsPopular }) => {
                            }}
                         />
                      </div>
-                     <h2 className={cx("product__name")}>{title}</h2>
+                     {title && <h2 className={cx("product__name")}>{title}</h2>}
                      <div className={cx("product__row2")}>
                         <div className={cx("product__rating")}>
                            <img src={start} alt="" />
@@ -85,53 +89,57 @@ const CartsProducts = ({ productsPopular }) => {
                            </p>
                         </div>
                         <div className={cx("product__sale")}>
-                           <span
-                              className={
-                                 price_old
-                                    ? cx("product__price--line_through")
-                                    : cx("product__price")
-                              }
-                           >
-                              {price}
-                           </span>
+                           {price && (
+                              <span
+                                 className={
+                                    price_old
+                                       ? cx("product__price--line_through")
+                                       : cx("product__price")
+                                 }
+                              >
+                                 ${price}
+                              </span>
+                           )}
                            {price_old && (
                               <span className={cx("product__price--old")}>
-                                 {price_old}
+                                 ${price_old}
                               </span>
                            )}
                         </div>
                      </div>
-                     <button
-                        className={cx("product__add-cart")}
-                        onClick={() => {
-                           const productToNotify = {
-                              id,
-                              category,
-                              image,
-                              price,
-                              rating,
-                              title,
-                              label,
-                              price_old,
-                              quantity: 1,
-                           };
-                           setProductNotification(productToNotify);
-                           handleAddToCart(
-                              id,
-                              category,
-                              image,
-                              price,
-                              rating,
-                              title,
-                              label,
-                              price_old
-                           );
-                           // Không cần gọi handleClick nữa vì đã đặt productNotification
-                           setShowNotification(true);
-                        }}
-                     >
-                        {buttonText}
-                     </button>
+                     {buttonText && (
+                        <button
+                           className={cx("product__add-cart")}
+                           onClick={() => {
+                              const productToNotify = {
+                                 id,
+                                 category,
+                                 image,
+                                 price,
+                                 rating,
+                                 title,
+                                 label,
+                                 price_old,
+                                 quantity: 1,
+                              };
+                              setProductNotification(productToNotify);
+                              handleAddToCart(
+                                 id,
+                                 category,
+                                 image,
+                                 price,
+                                 rating,
+                                 title,
+                                 label,
+                                 price_old
+                              );
+                              // Không cần gọi handleClick nữa vì đã đặt productNotification
+                              setShowNotification(true);
+                           }}
+                        >
+                           {buttonText}
+                        </button>
+                     )}
                   </div>
                </div>
             )
