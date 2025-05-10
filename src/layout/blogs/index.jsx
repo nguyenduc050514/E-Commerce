@@ -38,7 +38,6 @@ const Blogs = () => {
                         transition: "transform 0.5s ease",
                      }}
                   >
-                     {/* Hiển thị 3 bài blog */}
                      {blogs
                         .slice(
                            0,

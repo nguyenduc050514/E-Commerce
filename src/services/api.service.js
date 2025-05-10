@@ -114,6 +114,11 @@ const getSmartCategories = () => {
    return instance2.get(URL_BACKEND);
 };
 
+const getCommentsAll = () => {
+   const URL_BACKEND = "/comments";
+   return instance2.get(URL_BACKEND);
+};
+
 export {
    getSection,
    getExploreCategories,
@@ -129,4 +134,5 @@ export {
    getCollectionProducts,
    getArrivalsProducts,
    getSmartCategories,
+   getCommentsAll,
 };
