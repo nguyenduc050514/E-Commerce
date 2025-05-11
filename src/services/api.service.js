@@ -134,6 +134,11 @@ const getCategoriesSofa = () => {
    return instance2.get(URL_BACKEND);
 };
 
+const getProductsNewSofa = () => {
+   const URL_BACKEND = "/new_products_sofa";
+   return instance2.get(URL_BACKEND);
+};
+
 export {
    getSection,
    getExploreCategories,
@@ -153,4 +158,5 @@ export {
    getBlogsAllList,
    getAllThumbnail,
    getCategoriesSofa,
+   getProductsNewSofa,
 };
