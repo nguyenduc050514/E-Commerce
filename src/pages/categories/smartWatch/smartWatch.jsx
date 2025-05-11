@@ -5,6 +5,7 @@ import ExploreCategories from "./explore/explore";
 import Sellers from "./sellers/sellers";
 import RotatingBanners from "@components/common/RotatingBanners/RotatingBanners";
 import Comments from "./comments/comment";
+import Blogs from "@pages/categories/smartWatch/blogs/blog";
 const SmartWatch = () => {
    return (
       <>
@@ -15,6 +16,7 @@ const SmartWatch = () => {
          <Sellers />
          <RotatingBanners />
          <Comments />
+         <Blogs />
       </>
    );
 };

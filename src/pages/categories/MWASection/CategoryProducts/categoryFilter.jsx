@@ -43,8 +43,8 @@ const CategoryFilter = () => {
             category: "Women Product",
          },
          {
-            id: "accessory",
-            category: "Accessories",
+            id: "modern",
+            category: "Modern",
          },
       ];
    }, []);

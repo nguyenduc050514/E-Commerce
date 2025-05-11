@@ -25,7 +25,6 @@ const Comments = () => {
       fetchCommentsData();
    }, []);
    const totalPages = Math.ceil(commentsData.length / itemsPerPage);
-
    return (
       <div className={cx("comments")}>
          <div className={cx("comments-container")}>
@@ -35,7 +34,7 @@ const Comments = () => {
             <div className={cx("comments-content")}>
                <div className={cx("slider-wrapper")}>
                   <div
-                     className={cx("slide-track", { active: "isActive" })}
+                     className={cx("slide-track")}
                      style={{
                         transform: `translateX(-${currentSlide * 100}%)`,
                         transition: "transform 0.5s ease",

@@ -1,5 +1,5 @@
 @import "@assets/scss/main.scss";
-
+$itemsPages: 3;
 .comments {
    margin-top: 150px;
    &-container {
@@ -23,14 +23,9 @@
 
 .comments-content__item {
    font-family: "Manrope";
-   flex: 0 0 calc(100% / 3); // Mỗi item chiếm 1/3 chiều rộng của container
-   box-sizing: border-box;
+   flex: 0 0 calc(100% / $itemsPages); // Mỗi item chiếm 1/3 chiều rộng của container
    padding: 0 10px;
    transition: opacity 0.3s ease;
-}
-
-.comments-content__item.isActive {
-   box-shadow: 0px 20px 60px 0 #1e2a3912;
 }
 
 .comments-content__heading {

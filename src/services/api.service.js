@@ -119,6 +119,16 @@ const getCommentsAll = () => {
    return instance2.get(URL_BACKEND);
 };
 
+const getBlogsAllList = () => {
+   const URL_BACKEND = "/smart-blogs";
+   return instance2.get(URL_BACKEND);
+};
+
+const getAllThumbnail = () => {
+   const URL_BACKEND = "/sofa-thumbnail";
+   return instance2.get(URL_BACKEND);
+};
+
 export {
    getSection,
    getExploreCategories,
@@ -135,4 +145,6 @@ export {
    getArrivalsProducts,
    getSmartCategories,
    getCommentsAll,
+   getBlogsAllList,
+   getAllThumbnail,
 };
