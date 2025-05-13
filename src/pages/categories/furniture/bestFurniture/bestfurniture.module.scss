@@ -1,8 +1,7 @@
 @import "@assets/scss/main.scss";
-$height-btn: 60px;
-$font-second-family: "Manrope";
-.products {
+.best {
    margin-top: 150px;
+
    &-container {
       @extend %containerMaxWidth;
    }
@@ -11,8 +10,8 @@ $font-second-family: "Manrope";
       font-weight: 700;
       font-size: 5.8rem;
       line-height: 1.1;
-      color: $primary-text-color;
    }
+
    &-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

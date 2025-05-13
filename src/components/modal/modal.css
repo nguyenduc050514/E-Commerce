@@ -1,0 +1,60 @@
+.popzy__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Thêm !important */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999 !important; /* Tăng z-index */
+  cursor: pointer; /* Thêm cursor pointer */
+}
+
+.popzy__backdrop.popzy--show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popzy__container {
+  position: relative;
+  background: transparent !important;
+  max-width: 90%;
+  max-height: 90%;
+  cursor: default; /* Ngăn sự kiện click lan ra container */
+}
+
+.popzy--show .popzy__container {
+  transform: scale(1);
+}
+
+.popzy__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  z-index: 10;
+}
+
+.popzy__content {
+  position: relative;
+  z-index: 1;
+}
+
+.popzy__footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Utility class to prevent scrolling on body */
+.popzy--no-scroll {
+  overflow: hidden;
+}

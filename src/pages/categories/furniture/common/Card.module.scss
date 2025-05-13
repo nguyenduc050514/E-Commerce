@@ -1,0 +1,81 @@
+@import "@assets/scss/main.scss";
+$height-btn: 60px;
+$font-second-family: "Manrope";
+.products-item {
+   padding: 20px 25px;
+   box-shadow: 0px 40px 150px 4px #0000000f;
+   font-family: $font-second-family;
+   border-radius: 5px;
+   background-color: #fff;
+   &__img {
+      width: 100%;
+      height: 267px;
+      border-radius: 15px;
+      object-fit: cover;
+   }
+
+   &__image {
+      position: relative;
+   }
+
+   &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__overview {
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%;
+      transition: bottom 0.3s ease-in-out;
+      z-index: -1;
+   }
+
+   &__overview_show {
+      bottom: 0;
+   }
+
+   &__label {
+      font-size: 1.4rem;
+      line-height: 1.67;
+      color: #566363;
+      margin-top: 20px;
+   }
+
+   &__heading {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-top: 5px;
+   }
+
+   &__rating {
+      margin-top: 12px;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.67;
+      color: #566363;
+   }
+
+   &__add-cart {
+      height: $height-btn;
+      background: #fff;
+      font-family: $font-second-family;
+      margin-top: 28px;
+      min-width: 100%;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 1.67;
+      text-align: center;
+      color: $primary-bg-color;
+      border: 1px solid #f1deb4;
+      transition: 0.3s ease;
+   }
+
+   &:hover &__add-cart {
+      background: #f1deb4;
+      color: $primary-bg-color;
+   }
+}

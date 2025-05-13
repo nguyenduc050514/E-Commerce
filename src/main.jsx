@@ -10,6 +10,7 @@ import Brand from "@pages/brand/index.jsx";
 import Category from "@pages/categories/index.jsx";
 import HomePage from "@pages/Home/homePage.jsx";
 import { WishlistProvider } from "@context/WishlistContext.jsx";
+import Pages from "@pages/page/index.jsx";
 const router = createBrowserRouter([
    {
       path: "/",
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
          {
             path: "/",
             element: <HomePage />,
+         },
+         {
+            path: "/pages/:productsFurnitureId",
+            element: <Pages />,
          },
          {
             path: "/about",

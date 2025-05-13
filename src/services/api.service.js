@@ -135,7 +135,7 @@ const getCategoriesSofa = () => {
 };
 
 const getProductsNewSofa = () => {
-   const URL_BACKEND = "/new_products_sofa";
+   const URL_BACKEND = "/products_sofa";
    return instance2.get(URL_BACKEND);
 };
 
