@@ -1,9 +1,9 @@
-@import "@assets/scss/main.scss"; 
+@import "@assets/scss/main.scss";
 .services {
    margin-top: 150px;
 
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
       display: grid;
       grid-template-columns: 1fr 1fr;
    }
@@ -34,7 +34,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: rgba(0, 0, 0, 0.3);
+   background-color: rgba(0, 0, 0, 0.5);
    opacity: 0;
    transition: opacity 0.3s ease;
    border-radius: 10px;
@@ -92,6 +92,13 @@
       align-items: center;
       gap: 18px;
    }
+
+   &-action {
+      margin-top: 70px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
 }
 
 .item {
@@ -125,9 +132,9 @@
 
 .video-container {
    position: relative;
-   padding-bottom: 56.25%;
-   height: 0;
-   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
    &__if {
       position: absolute;
@@ -137,16 +144,4 @@
       height: 100%;
       border: 0;
    }
-}
-
-:global(.popzy__close) {
-   z-index: 20;
-   color: white !important;
-   font-size: 22px !important;
-   opacity: 0.8;
-   transition: opacity 0.2s ease;
-}
-
-:global(.popzy__close:hover) {
-   opacity: 1;
 }

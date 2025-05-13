@@ -12,7 +12,7 @@ $font-family: "Manrope";
    }
 
    &--container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    &--wrapper {

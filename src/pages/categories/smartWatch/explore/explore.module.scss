@@ -2,7 +2,7 @@
 .explore {
    margin-top: 150px;
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    &-header__heading {

@@ -1,0 +1,59 @@
+@import "@assets/scss/main.scss";
+.feature {
+   margin-top: 150px;
+   &-container {
+      @extend %container;
+   }
+
+   &-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 70px;
+   }
+
+   &-img {
+      max-width: 370px;
+      height: 310px;
+      border-radius: 10px;
+   }
+
+   &-item {
+      font-family: "Manrope";
+   }
+
+   &-heading {
+      font-weight: 700;
+      font-size: 4.2rem;
+      line-height: 1.1;
+      color: $primary-text-color;
+   }
+
+   &-title {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-top: 20px;
+   }
+
+   &-row {
+      display: flex;
+      gap: 15px;
+      margin-top: 12px;
+      align-items: center;
+   }
+
+   &-price {
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 1.67;
+   }
+
+   &-review {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.67;
+      color: #566363;
+      cursor: pointer;
+   }
+}

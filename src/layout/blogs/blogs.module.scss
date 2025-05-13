@@ -103,7 +103,7 @@
    }
 
    .container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    /* Responsive Design */

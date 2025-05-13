@@ -1,6 +1,6 @@
 @import "@assets/scss/main.scss";
 .section-banner {
-   @extend %containerMaxWidth;
+   @extend %container;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    transition: transform 0.5s ease;

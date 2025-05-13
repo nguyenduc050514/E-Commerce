@@ -4,7 +4,7 @@ $itemsPages: 2;
 .blogs {
    margin-top: 150px;
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    &-header {

@@ -3,7 +3,7 @@
    margin-top: 234px;
 
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    &-wrapper {

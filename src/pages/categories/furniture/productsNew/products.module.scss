@@ -4,7 +4,7 @@ $font-second-family: "Manrope";
 .products {
    margin-top: 150px;
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    &-heading {

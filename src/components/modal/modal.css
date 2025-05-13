@@ -1,60 +1,69 @@
 .popzy__backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8) !important; /* Thêm !important */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999 !important; /* Tăng z-index */
-  cursor: pointer; /* Thêm cursor pointer */
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity, visibility;
+    transition-duration: 0.3s;
+    z-index: 100000;
 }
 
-.popzy__backdrop.popzy--show {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popzy__container {
-  position: relative;
-  background: transparent !important;
-  max-width: 90%;
-  max-height: 90%;
-  cursor: default; /* Ngăn sự kiện click lan ra container */
+.popzy--show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .popzy--show .popzy__container {
-  transform: scale(1);
+    transform: scale(1);
+}
+
+.popzy__container {
+    position: relative;
+    width: min(600px, 90%);
+    padding: 20px 20px 0;
+    border-radius: 6px;
+    background: #fff;
+    transform: scale(0);
+    transition: transform 0.3s;
+    padding-bottom: 20px;
 }
 
 .popzy__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #666;
-  z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #666;
+    background: #ebebeb;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.popzy__close:hover {
+    color: #333;
 }
 
 .popzy__content {
-  position: relative;
-  z-index: 1;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .popzy__footer {
-  padding: 15px 20px;
-  border-top: 1px solid #eee;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding-top: 20px;
 }
 
-/* Utility class to prevent scrolling on body */
 .popzy--no-scroll {
-  overflow: hidden;
+    overflow: hidden;
 }

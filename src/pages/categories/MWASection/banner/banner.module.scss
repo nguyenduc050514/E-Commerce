@@ -32,7 +32,7 @@
 
    &-container {
       position: relative;
-      @extend %containerMaxWidth;
+      @extend %container;
    }
    &-wrapper--heading {
       position: absolute;

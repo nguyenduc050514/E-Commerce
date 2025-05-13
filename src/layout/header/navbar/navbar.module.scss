@@ -20,7 +20,7 @@
 
    &-navbar__list {
       @include flexItemCenter();
-      @extend %containerMaxWidth;
+      @extend %container;
       width: fit-content;
       margin-top: 10px;
       transition: all 0.3s ease;

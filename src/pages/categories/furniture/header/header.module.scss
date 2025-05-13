@@ -5,7 +5,7 @@
    height: 100vh;
    background: $primary-card-ng-color;
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    &-wrapper {

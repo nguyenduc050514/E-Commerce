@@ -3,7 +3,7 @@
    margin-top: 110px;
 
    &__container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    @include breakpoint(large) {

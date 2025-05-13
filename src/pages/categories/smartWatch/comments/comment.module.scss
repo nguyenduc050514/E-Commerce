@@ -3,7 +3,7 @@ $itemsPages: 3;
 .comments {
    margin-top: 150px;
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
    &-heading {
       font-weight: 700;

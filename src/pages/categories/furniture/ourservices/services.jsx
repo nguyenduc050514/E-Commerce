@@ -4,12 +4,12 @@ import shipping from "@assets/icons/shipping.svg";
 import support from "@assets/icons/support.svg";
 import money from "@assets/icons/money.svg";
 import cart from "@assets/icons/cart.svg";
+import banner from "@assets/images/banner-video.jpg";
 import { useMemo, useRef } from "react";
 import "@components/modal/modal.css";
 import PopzyModal from "@components/modal/modal";
-
+import Button from "@components/common/button/button";
 const cx = classNames.bind(styles);
-
 const ServicesOur = () => {
    const videoModalRef = useRef(null);
 
@@ -64,8 +64,20 @@ const ServicesOur = () => {
                   ))}
                </ul>
                <div className={cx("content-action")}>
-                  <button className={cx("action-btn")}></button>
-                  <button className={cx("action-btn")}></button>
+                  <Button
+                     children="Request a Quote"
+                     minWidth="194px"
+                     borderRadius="8px"
+                  />
+                  <Button
+                     children=" Watch a video"
+                     minWidth="170px"
+                     borderRadius="8px"
+                     background="#fff"
+                     color="#131717"
+                     border="1px solid #A6B6B6"
+                     onClick={openVideoModal}
+                  />
                </div>
             </div>
             <figure
@@ -74,7 +86,7 @@ const ServicesOur = () => {
                style={{ cursor: "pointer" }}
             >
                <img
-                  src="https://i.imgur.com/lHuMegR.jpeg"
+                  src={banner}
                   alt="Click to play video"
                   className={cx("services-media__img")}
                />
@@ -83,26 +95,27 @@ const ServicesOur = () => {
                </div>
             </figure>
          </div>
-         <PopzyModal
-            ref={videoModalRef}
-            cssClass={["video-modal"]}
-            enableScrollLock={true}
-            closeMethods={["overlay", "escape"]}
-         >
-            <div className={cx("video-container")}>
-               {/* <iframe
-                  className={cx("video-container__if")}
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/R5zuwtPBek4?si=-cbB_IM1491NKd77"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-               ></iframe> */}
-            </div>
-         </PopzyModal>
+
+         {videoModalRef && (
+            <PopzyModal
+               ref={videoModalRef}
+               cssClass={["video-modal"]}
+               enableScrollLock={true}
+            >
+               <div className={cx("video-container")}>
+                  <iframe
+                     width="560"
+                     height="315"
+                     src="https://www.youtube.com/embed/RDfwGkasp58"
+                     title="Nhạc US-UK Hot Nhất Tháng Này - Trending US-UK Songs This Month"
+                     frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin"
+                     allowfullscreen
+                  ></iframe>
+               </div>
+            </PopzyModal>
+         )}
       </div>
    );
 };

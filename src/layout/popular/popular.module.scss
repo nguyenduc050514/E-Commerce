@@ -23,7 +23,7 @@ $height-btn: 60px;
    }
 
    &__container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 }
 

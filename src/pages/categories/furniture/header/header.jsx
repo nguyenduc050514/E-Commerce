@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "@pages/categories/furniture/header/header.module.scss";
 const cx = classNames.bind(styles);
 import furniture from "@assets/images/1.png";
+import Button from "@components/common/button/button";
 const Header = () => {
    return (
       <div className={cx("header")}>
@@ -16,7 +17,12 @@ const Header = () => {
                      styles of modern furniture for you. Still, the second
                      option holds promised. could make the tagline.
                   </p>
-                  <button className={cx("header-action")}>Get Started</button>
+                  <Button
+                     children="Get Started"
+                     minWidth="181px"
+                     borderRadius="8px"
+                     marginTop="30px"
+                  />
                </div>
                <div className={cx("header-right")}>
                   <figure className={cx("header-image")}>

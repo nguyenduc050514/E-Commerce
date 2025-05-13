@@ -1,9 +1,10 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "@pages/categories/MWASection/CategoryProducts/categoryFilter.module.scss";
 // import CartsProducts from "@components/common/Card/Cards";
 import { getAllProductsPopular } from "@services/api.service";
 import CartsProducts from "@components/common/Card/Cards";
+import Button from "@components/common/button/button";
 const cx = classNames.bind(styles);
 const CategoryFilter = () => {
    const [allProductsMWA, setAllProductsMWA] = useState([]);
@@ -65,16 +66,18 @@ const CategoryFilter = () => {
          <div className={cx("category-products__container")}>
             <div className={cx("category-products__wrapper")}>
                {categories.map(({ id, category }) => (
-                  <button
+                  <Button
                      key={id}
-                     className={cx("category-products__filter-btn", {
-                        "category-products__filter-btn--active":
-                           activeCategory === id,
-                     })}
+                     minWidth="170px"
+                     height="55px"
+                     borderRadius="99px"
+                     border="1px solid #005D63"
+                     fontWeight="400"
+                     color={activeCategory === id ? "#fff" : "#005d63"}
                      onClick={() => handleFilterProducts(id)}
-                  >
-                     {category}
-                  </button>
+                     children={category}
+                     background={activeCategory === id ? "#005d63" : "#fff"}
+                  />
                ))}
             </div>
             <div className={cx("products")}>

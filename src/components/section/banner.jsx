@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "@components/section/banner.module.scss";
+import Button from "@components/common/button/button";
 const cx = classNames.bind(styles);
 const Banner = (props) => {
    const { dataHero, currentSlide } = props;
@@ -12,9 +13,7 @@ const Banner = (props) => {
             <p className={cx("section-ct__desc")}>
                {dataHero[currentSlide].desc}
             </p>
-            <button className={cx("section-ct__more")}>
-               {dataHero[currentSlide].btnTitle}
-            </button>
+            <Button marginTop="35px" />
          </div>
          <div className={cx("section-media")}>
             <figure className={cx("media__image")}>
@@ -31,5 +30,3 @@ const Banner = (props) => {
    );
 };
 export default Banner;
-
-

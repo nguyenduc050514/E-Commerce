@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "@pages/categories/furniture/SofaFeatureSection/SofaFeature.module.scss";
 import { useCallback, useEffect, useState } from "react";
 import { getAllThumbnail } from "@services/api.service";
+import Button from "@components/common/button/button";
 
 const cx = classNames.bind(styles);
 
@@ -111,9 +112,12 @@ const SofaFeature = () => {
                         </li>
                      ))}
                   </ul>
-                  <button className={cx("sofaFeature-action")}>
-                     Learn More
-                  </button>
+                  <Button
+                     children="Learn More"
+                     minWidth="181px"
+                     borderRadius="8px"
+                     marginTop="35px"
+                  />
                </div>
             </div>
          </div>

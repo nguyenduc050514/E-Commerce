@@ -87,7 +87,7 @@ $shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 130px;
-      @extend %containerMaxWidth;
+      @extend %container;
       &-media {
          background-color: #fff0e9;
          padding: 44px;

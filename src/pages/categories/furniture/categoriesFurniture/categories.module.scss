@@ -4,7 +4,7 @@
    margin-top: 150px;
 
    &-container {
-      @extend %containerMaxWidth;
+      @extend %container;
    }
 
    &-tabs-container {
