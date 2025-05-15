@@ -144,6 +144,11 @@ const getFeaturedFurniture = () => {
    return instance2.get(URL_BACKEND);
 };
 
+const getCustomerComment = () => {
+   const URL_BACKEND = "/customers-cmt";
+   return instance2.get(URL_BACKEND);
+};
+
 export {
    getSection,
    getExploreCategories,
@@ -165,4 +170,5 @@ export {
    getCategoriesSofa,
    getProductsNewSofa,
    getFeaturedFurniture,
+   getCustomerComment,
 };

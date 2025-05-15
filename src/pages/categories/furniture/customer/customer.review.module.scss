@@ -1,0 +1,98 @@
+@import "@assets/scss/main.scss";
+$itemsPages: 2;
+.reviews {
+   margin-top: 150px;
+
+   &-container {
+      @extend %container;
+   }
+
+   &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__heading {
+      font-weight: 700;
+      font-size: 5.8rem;
+      line-height: 1.1;
+      color: $primary-text-color;
+      max-width: 688px;
+   }
+
+   &__action {
+      display: flex;
+      gap: 26px;
+   }
+
+   &-content {
+      margin-top: 84px;
+      font-family: "Manrope";
+   }
+
+   &-list {
+      overflow: hidden;
+   }
+
+   &-item {
+      flex: 0 0 calc(100% / $itemsPages);
+      padding: 42px 44px;
+      border-radius: 12px;
+      cursor: pointer;
+   }
+
+   &-item:hover {
+      box-shadow: 0px 35px 79px -12px #004e8a24;
+   }
+
+   &-cmt {
+      font-size: 2rem;
+      line-height: 1.67;
+      color: #717080;
+   }
+
+   &-user {
+      margin-top: 44px;
+   }
+
+   &-avatar {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      object-position: 90%;
+      border-radius: 50%;
+   }
+
+   &-user {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+   }
+
+   &-name {
+      font-weight: 600;
+      font-size: 2.2rem;
+      line-height: 1;
+      color: $primary-text-color;
+   }
+
+   &-title {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-top: 12px;
+      color: #566363;
+   }
+
+   &-rating {
+      display: flex;
+      gap: 8px;
+      margin-top: 30px;
+   }
+
+   &-track {
+      display: flex;
+      gap: 30px;
+   }
+}

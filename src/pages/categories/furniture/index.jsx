@@ -5,6 +5,7 @@ import Products from "@pages/categories/furniture/productsNew/products";
 import BestFurniture from "@pages/categories/furniture/bestFurniture/bestfurniture";
 import ServicesOur from "@pages/categories/furniture/ourservices/services";
 import FeaturedProducts from "./featured/feature";
+import CustomerReviews from "./customer/customer.review";
 const Furniture = () => {
    return (
       <>
@@ -15,6 +16,7 @@ const Furniture = () => {
          <BestFurniture />
          <ServicesOur />
          <FeaturedProducts />
+         <CustomerReviews />
       </>
    );
 };
